@@ -140,7 +140,9 @@ D:\Web Development\Backend-ASP.NET\ASP.NET Web\epl_api\obj\Debug\net9.0\epl_api.
 D:\Web Development\Backend-ASP.NET\ASP.NET Web\epl_api\obj\Debug\net9.0\epl_api.csproj.CoreCompileInputs.cache
 D:\Web Development\Backend-ASP.NET\ASP.NET Web\epl_api\obj\Debug\net9.0\epl_api.MvcApplicationPartsAssemblyInfo.cs
 D:\Web Development\Backend-ASP.NET\ASP.NET Web\epl_api\obj\Debug\net9.0\epl_api.MvcApplicationPartsAssemblyInfo.cache
+D:\Web Development\Backend-ASP.NET\ASP.NET Web\epl_api\obj\Debug\net9.0\epl_api.sourcelink.json
 D:\Web Development\Backend-ASP.NET\ASP.NET Web\epl_api\obj\Debug\net9.0\scopedcss\bundle\epl_api.styles.css
+D:\Web Development\Backend-ASP.NET\ASP.NET Web\epl_api\obj\Debug\net9.0\compressed\2s3rmknc42-bxshmwomhh.gz
 D:\Web Development\Backend-ASP.NET\ASP.NET Web\epl_api\obj\Debug\net9.0\staticwebassets.build.json
 D:\Web Development\Backend-ASP.NET\ASP.NET Web\epl_api\obj\Debug\net9.0\staticwebassets.development.json
 D:\Web Development\Backend-ASP.NET\ASP.NET Web\epl_api\obj\Debug\net9.0\staticwebassets.build.endpoints.json

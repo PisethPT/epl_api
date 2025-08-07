@@ -12,9 +12,11 @@ public static class PlayerEndpoints
     private static readonly string directory = "Players";
     public static void MapPlayers(this WebApplication app)
     {
-        app.MapGet("/players/by-team", async (EPLContext context, int teamId, int? playerId) =>
+        app.MapGet("/players/by-team", async (EPLContext context, int? teamId, int? playerId) =>
         {
-            var players = await context.Players.Where(player => player.TeamId.Equals(teamId)).ToListAsync();
+            var players = await context.Players.Include(team => team.Team).ToListAsync();
+            if (teamId is not null)
+                players = players.Where(player => player.TeamId.Equals(teamId)).ToList();
             if (playerId is not null)
             {
                 players = players.Where(player => player.Id.Equals(playerId)).ToList();
@@ -23,7 +25,21 @@ public static class PlayerEndpoints
             {
                 statusCode = 200,
                 message = "Players fetched successfully.",
-                data = players
+                content = players.Select(player => new
+                {
+                    id = player.Id,
+                    firstName = player.FirstName,
+                    lastName = player.LastName,
+                    photo = player.Photo,
+                    position = player.Position,
+                    playerNumber = player.PlayerNumber,
+                    teamId = player.TeamId,
+                    teamName = player.Team?.Name,
+                    teamClubCrest = player.Team?.ClubCrest,
+                    socialMedia = player.SocialMedia,
+                    nationality = player.Nationality,
+                    preferredFoot = player.PreferredFoot
+                }).ToList()
             });
         });
 
@@ -41,7 +57,7 @@ public static class PlayerEndpoints
             {
                 statusCode = 200,
                 message = "Success.",
-                data = existingPlayer
+                content = existingPlayer
             });
         }).RequireAuthorization();
 
@@ -69,7 +85,10 @@ public static class PlayerEndpoints
                 Position = model.Position,
                 PlayerNumber = model.PlayerNumber,
                 TeamId = model.TeamId,
-                Photo = fileName
+                Photo = fileName,
+                Nationality = model.Nationality,
+                PreferredFoot = model.PreferredFoot,
+                SocialMedia = model.SocialMedia,
             };
             context.Players.Add(player);
             await context.SaveChangesAsync();
@@ -77,7 +96,7 @@ public static class PlayerEndpoints
             {
                 statusCode = 201,
                 message = "Player created successfully.",
-                data = player
+                content = player
             });
 
         }).DisableAntiforgery()
@@ -115,6 +134,9 @@ public static class PlayerEndpoints
             existingPlayer!.LastName = string.IsNullOrEmpty(model.LastName) ? existingPlayer.LastName : model.LastName;
             existingPlayer!.Position = string.IsNullOrEmpty(model.Position) ? existingPlayer.Position : model.Position;
             existingPlayer!.PlayerNumber = model.PlayerNumber == 0 ? existingPlayer.PlayerNumber : model.PlayerNumber;
+            existingPlayer!.Nationality = string.IsNullOrEmpty(model.Nationality) ? existingPlayer.Nationality : model.Nationality;
+            existingPlayer!.PreferredFoot = string.IsNullOrEmpty(model.PreferredFoot) ? existingPlayer.PreferredFoot : model.PreferredFoot;
+            existingPlayer!.SocialMedia = string.IsNullOrEmpty(model.SocialMedia) ? existingPlayer.SocialMedia : model.SocialMedia;
             existingPlayer!.TeamId = model.TeamId;
             if (!string.IsNullOrEmpty(fileName))
                 existingPlayer.Photo = fileName;
@@ -125,7 +147,7 @@ public static class PlayerEndpoints
             {
                 statusCode = 200,
                 message = "Player updated successfully.",
-                data = existingPlayer
+                content = existingPlayer
             });
         }).DisableAntiforgery()
         .RequireAuthorization("OnlyAdmin");

@@ -7,6 +7,7 @@ public class TeamDto
     public string City { get; set; } = string.Empty;
     public string HomeStadium { get; set; } = string.Empty;
     public string HeadCoach { get; set; } = string.Empty;
+    public string WebsiteUrl { get; set; } = string.Empty;
 
     public IFormFile? ClubCrest { get; set; }
 }

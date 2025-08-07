@@ -10,30 +10,42 @@ public static class MatchEndpoints
 {
     public static void MapMatches(this WebApplication app)
     {
-        app.MapGet("/matches", async (EPLContext context) =>
+        app.MapGet("/matches", async (EPLContext context, int? kickoffStatus) =>
         {
-            foreach (var match in context.Matches.Where(match => match.Status != 2))
+            foreach (var match in context.Matches.Where(match => match.KickoffStatus != 2))
             {
-                if (match.MatchDate.AddMinutes(90) < DateTime.Now && match.Status != 2)
-                    match.Status = 2;
+                var matchDateTime = match.MatchDate.ToDateTime(TimeOnly.FromTimeSpan(match.MatchTime));
+                if (matchDateTime.AddMinutes(90) < DateTime.Now && matchDateTime < DateTime.Now && match.KickoffStatus != 2)
+                {
+                    match.KickoffStatus = 2;
+                    match.IsGameFinish = true;
+                }
                 // If the match is ongoing, set status to 0 but alway status is 1 when create first match
-                else if (match.MatchDate.AddMinutes(90) > DateTime.Now && match.MatchDate < DateTime.Now && match.Status != 0)
-                    match.Status = 0;
+                else if (matchDateTime.AddMinutes(90) > DateTime.Now && matchDateTime < DateTime.Now && match.KickoffStatus != 0)
+                {
+                    match.KickoffStatus = 0;
+                    match.IsGameFinish = false;
+                }
                 context.Matches.Update(match);
             }
             await context.SaveChangesAsync();
 
-            var matches = await context.Matches.Include(h => h.HomeTeam).Include(a => a.AwayTeam).OrderBy(match => match.Status).ToListAsync();
+            var matches = await context.Matches.Include(h => h.HomeTeam).Include(a => a.AwayTeam).OrderBy(match => match.KickoffStatus).ToListAsync();
             if (matches.Count > 0)
             {
                 var matchDetails = new List<MatchDetailDto>();
+                if (kickoffStatus is not null)
+                    matches = matches.Where(match => match.KickoffStatus == kickoffStatus).ToList();
+
                 foreach (var match in matches)
                 {
                     var matchDetail = new MatchDetailDto
                     {
                         MatchId = match.Id,
-                        MatchDate = match.MatchDate.ToString("dddd, dd-MM-yyyy"),
-                        MatchTime = match.MatchDate.ToString("HH:mm tt"),
+                        MatchDateFormat = match.MatchDate.ToString("dddd, dd-MM-yyyy"),
+                        MatchTimeFormat = DateTime.Parse(match.MatchTime.ToString()).ToString("HH:mm tt"),
+                        MatchDate = match.MatchDate,
+                        MatchTime = match.MatchTime,
                         HomeTeamId = match.HomeTeamId,
                         AwayTeamId = match.AwayTeamId,
                         HomeTeamName = match.HomeTeam!.Name,
@@ -42,9 +54,10 @@ public static class MatchEndpoints
                         AwayTeamClubCrest = match.AwayTeam.ClubCrest,
                         HomeTeamScore = match.HomeTeamScore,
                         AwayTeamScore = match.AwayTeamScore,
-                        KickoffStadium = match.HomeTeam.HomeStadium,
-                        Status = match.Status,
-                        IsFinish = match.MatchDate.AddMinutes(90) < DateTime.Now ? true : false
+                        KickoffStadium = match.IsHomeStadium ? match.HomeTeam!.HomeStadium : match.AwayTeam!.HomeStadium,
+                        IsHomeStadium = match.IsHomeStadium ? true : false,
+                        KickoffStatus = match.KickoffStatus,
+                        IsGameFinish = match.IsGameFinish
                     };
                     matchDetails.Add(matchDetail);
                 }
@@ -52,7 +65,7 @@ public static class MatchEndpoints
                 {
                     statusCode = 200,
                     message = "Success.",
-                    data = matchDetails.ToList()
+                    content = matchDetails.ToList()
                 });
             }
             else
@@ -60,14 +73,13 @@ public static class MatchEndpoints
                 {
                     statusCode = "200",
                     message = "Success.",
-                    data = matches
+                    content = matches
                 });
         });
 
         app.MapGet("/matches/{id:int}", async (EPLContext context, int id) =>
         {
-            var match = await context.Matches.Include(h => h.HomeTeam).Include(a => a.AwayTeam)
-                .FirstOrDefaultAsync(match => match.Id.Equals(id));
+            var match = await context.Matches.Include(h => h.HomeTeam).Include(a => a.AwayTeam).FirstOrDefaultAsync(match => match.Id.Equals(id));
             if (match == null)
             {
                 return Results.NotFound(new
@@ -76,18 +88,31 @@ public static class MatchEndpoints
                     message = "Match not found."
                 });
             }
-            var matchDetail = new MatchDto
+            var matchDetail = new MatchDetailDto
             {
-                Id = match.Id,
+                MatchId = match.Id,
+                MatchDateFormat = match.MatchDate.ToString("dddd, dd-MM-yyyy"),
+                MatchTimeFormat = DateTime.Parse(match.MatchTime.ToString()).ToString("HH:mm tt"),
                 MatchDate = match.MatchDate,
+                MatchTime = match.MatchTime,
                 HomeTeamId = match.HomeTeamId,
-                AwayTeamId = match.AwayTeamId
+                AwayTeamId = match.AwayTeamId,
+                HomeTeamName = match.HomeTeam!.Name,
+                AwayTeamName = match.AwayTeam!.Name,
+                HomeTeamClubCrest = match.HomeTeam.ClubCrest,
+                AwayTeamClubCrest = match.AwayTeam.ClubCrest,
+                HomeTeamScore = match.HomeTeamScore,
+                AwayTeamScore = match.AwayTeamScore,
+                KickoffStadium = match.IsHomeStadium ? match.HomeTeam!.HomeStadium : match.AwayTeam!.HomeStadium,
+                IsHomeStadium = match.IsHomeStadium ? true : false,
+                KickoffStatus = match.KickoffStatus,
+                IsGameFinish = match.IsGameFinish
             };
             return Results.Ok(new
             {
                 statusCode = 200,
                 message = "Success.",
-                data = matchDetail
+                content = matchDetail
             });
         }).RequireAuthorization();
 
@@ -108,22 +133,28 @@ public static class MatchEndpoints
                 {
                     statusCode = 409,
                     massage = "Match's information duplication.",
-                    data = existingMatch
+                    content = existingMatch
                 });
             var match = new Match
             {
                 MatchDate = model.MatchDate,
+                MatchTime = model.MatchTime,
                 HomeTeamId = model.HomeTeamId,
                 AwayTeamId = model.AwayTeamId,
-                Status = 1
+                HomeTeamScore = 0,
+                AwayTeamScore = 0,
+                KickoffStatus = model.KickoffStatus,
+                IsHomeStadium = model.IsHomeStadium,
+                IsGameFinish = model.IsGameFinish
             };
             context.Matches.Add(match);
+
             await context.SaveChangesAsync();
             return Results.Created($"/matches/{match.Id}", new
             {
                 statusCode = 201,
                 message = "Match created successfully.",
-                data = match
+                content = match
             });
         }).DisableAntiforgery()
         .RequireAuthorization("OnlyAdmin");
@@ -136,31 +167,31 @@ public static class MatchEndpoints
             {
                 return Results.NotFound("Match not found.");
             }
-
-            if (matchToEdit.Status == 0)
+            var matchDateTime = model.MatchDate.ToDateTime(TimeOnly.FromTimeSpan(model.MatchTime));
+            if (matchToEdit.KickoffStatus == 0 && matchToEdit.IsGameFinish == false && matchDateTime.AddMinutes(90) > DateTime.Now && matchDateTime < DateTime.Now)
             {
                 return Results.BadRequest(new
                 {
                     statusCode = 404,
-                    message = "Can be not edit this match, Because this match 🔴 living.",
+                    message = "Can be not edit this match, Because this match living.",
                 });
             }
 
-            if (matchToEdit.Status == 2)
+            if (matchToEdit.KickoffStatus == 2 && matchToEdit.IsGameFinish == true)
             {
                 return Results.BadRequest(new
                 {
                     statusCode = 404,
-                    message = "Can be not edit this match, Because this ✅ Match Finished",
+                    message = "Can be not edit this match, Because this Match Finished",
                 });
             }
 
-            // Check for another match with the same HomeTeam and AwayTeam that is either Live or Pending
+            // Check for another match with the same HomeTeam and AwayTeam that is either Live or Pending (kickoff Status 0 is live or 2 is finished)
             var duplicateMatch = await context.Matches.FirstOrDefaultAsync(match =>
                 match.HomeTeamId == model.HomeTeamId &&
                 match.AwayTeamId == model.AwayTeamId &&
-                (match.Status == 0 || match.Status == 2) &&
-                match.Id != Id
+                match.MatchDate == model.MatchDate &&
+                (match.KickoffStatus == 0 || match.KickoffStatus == 2) && match.Id != Id
             );
 
             if (duplicateMatch is not null)
@@ -173,9 +204,30 @@ public static class MatchEndpoints
             }
 
             // ... update other fields
-            matchToEdit.HomeTeamId = model.HomeTeamId;
-            matchToEdit.AwayTeamId = model.AwayTeamId;
-            matchToEdit.MatchDate = model.MatchDate;
+            if (matchToEdit.KickoffStatus == 0 && matchToEdit.IsGameFinish == false) // if match is live and not finished
+            {
+                matchToEdit.KickoffStatus = model.KickoffStatus;
+                matchToEdit.IsGameFinish = model.IsGameFinish;
+                matchToEdit.HomeTeamScore = model.HomeTeamScore;
+                matchToEdit.AwayTeamScore = model.AwayTeamScore;
+            }
+            else if (matchToEdit.KickoffStatus == 2 && matchToEdit.IsGameFinish == true) // if match is finished
+            {
+                matchToEdit.KickoffStatus = model.KickoffStatus;
+                matchToEdit.IsGameFinish = model.IsGameFinish;
+            }
+            else if (matchToEdit.KickoffStatus == 1 && matchToEdit.IsGameFinish == false) // if match is upcoming
+            {
+                matchToEdit.HomeTeamId = model.HomeTeamId;
+                matchToEdit.AwayTeamId = model.AwayTeamId;
+                matchToEdit.MatchDate = model.MatchDate;
+                matchToEdit.MatchTime = model.MatchTime;
+                matchToEdit.HomeTeamScore = model.HomeTeamScore;
+                matchToEdit.AwayTeamScore = model.AwayTeamScore;
+                matchToEdit.IsHomeStadium = model.IsHomeStadium;
+                matchToEdit.KickoffStatus = model.KickoffStatus;
+                matchToEdit.IsGameFinish = model.IsGameFinish;
+            }
 
             context.Matches.Update(matchToEdit);
             await context.SaveChangesAsync();
@@ -183,7 +235,7 @@ public static class MatchEndpoints
             {
                 statusCode = 200,
                 message = "Match updated successfully.",
-                data = matchToEdit
+                content = matchToEdit
             });
 
         }).DisableAntiforgery()
@@ -200,7 +252,7 @@ public static class MatchEndpoints
                     message = "Match not found."
                 });
             }
-            if (match.Status == 0)
+            if (match.KickoffStatus == 0 && match.IsGameFinish == false)
             {
                 return Results.BadRequest(new
                 {
@@ -208,7 +260,7 @@ public static class MatchEndpoints
                     message = "Can be not delete this match, Because this match 🔴 living.",
                 });
             }
-            if (match.Status == 2)
+            if (match.KickoffStatus == 2 && match.IsGameFinish == true)
             {
                 return Results.BadRequest(new
                 {
@@ -233,7 +285,7 @@ public static class MatchEndpoints
         app.MapGet("/matches/ongoing", async (EPLContext context) =>
         {
             var ongoingMatches = await context.Matches.Include(h => h.HomeTeam).Include(a => a.AwayTeam)
-                .Where(match => match.Status == 0)
+                .Where(match => match.KickoffStatus == 0)
                 .OrderBy(match => match.MatchDate)
                 .ToListAsync();
 
@@ -243,15 +295,17 @@ public static class MatchEndpoints
                 {
                     statusCode = 200,
                     message = "No ongoing matches.",
-                    data = new List<MatchDetailDto>()
+                    content = new List<MatchDetailDto>()
                 });
             }
 
             var matchDetails = ongoingMatches.Select(match => new MatchDetailDto
             {
                 MatchId = match.Id,
-                MatchDate = match.MatchDate.ToString("dddd, dd-MM-yyyy"),
-                MatchTime = match.MatchDate.ToString("HH:mm tt"),
+                MatchDateFormat = match.MatchDate.ToString("dddd, dd-MM-yyyy"),
+                MatchTimeFormat = DateTime.Parse(match.MatchTime.ToString()).ToString("HH:mm tt"),
+                MatchDate = match.MatchDate,
+                MatchTime = match.MatchTime,
                 HomeTeamId = match.HomeTeamId,
                 AwayTeamId = match.AwayTeamId,
                 HomeTeamName = match.HomeTeam!.Name,
@@ -260,23 +314,24 @@ public static class MatchEndpoints
                 AwayTeamClubCrest = match.AwayTeam.ClubCrest,
                 HomeTeamScore = match.HomeTeamScore,
                 AwayTeamScore = match.AwayTeamScore,
-                KickoffStadium = match.HomeTeam.HomeStadium,
-                Status = match.Status,
-                IsFinish = match.MatchDate.AddMinutes(90) < DateTime.Now ? true : false
+                KickoffStadium = match.IsHomeStadium ? match.HomeTeam!.HomeStadium : match.AwayTeam!.HomeStadium,
+                IsHomeStadium = match.IsHomeStadium ? true : false,
+                KickoffStatus = match.KickoffStatus,
+                IsGameFinish = match.IsGameFinish
             }).ToList();
 
             return Results.Ok(new
             {
                 statusCode = 200,
                 message = "Success.",
-                data = matchDetails
+                content = matchDetails
             });
         }).RequireAuthorization();
 
         app.MapGet("/matches/finished", async (EPLContext context) =>
         {
             var finishedMatches = await context.Matches.Include(h => h.HomeTeam).Include(a => a.AwayTeam)
-                .Where(match => match.Status == 2)
+                .Where(match => match.KickoffStatus == 2)
                 .OrderByDescending(match => match.MatchDate)
                 .ToListAsync();
 
@@ -286,15 +341,17 @@ public static class MatchEndpoints
                 {
                     statusCode = 200,
                     message = "No finished matches.",
-                    data = new List<MatchDetailDto>()
+                    content = new List<MatchDetailDto>()
                 });
             }
 
             var matchDetails = finishedMatches.Select(match => new MatchDetailDto
             {
                 MatchId = match.Id,
-                MatchDate = match.MatchDate.ToString("dddd, dd-MM-yyyy"),
-                MatchTime = match.MatchDate.ToString("HH:mm tt"),
+                MatchDateFormat = match.MatchDate.ToString("dddd, dd-MM-yyyy"),
+                MatchTimeFormat = DateTime.Parse(match.MatchTime.ToString()).ToString("HH:mm tt"),
+                MatchDate = match.MatchDate,
+                MatchTime = match.MatchTime,
                 HomeTeamId = match.HomeTeamId,
                 AwayTeamId = match.AwayTeamId,
                 HomeTeamName = match.HomeTeam!.Name,
@@ -303,23 +360,24 @@ public static class MatchEndpoints
                 AwayTeamClubCrest = match.AwayTeam.ClubCrest,
                 HomeTeamScore = match.HomeTeamScore,
                 AwayTeamScore = match.AwayTeamScore,
-                KickoffStadium = match.HomeTeam.HomeStadium,
-                Status = match.Status,
-                IsFinish = match.MatchDate.AddMinutes(90) < DateTime.Now ? true : false
+                KickoffStadium = match.IsHomeStadium ? match.HomeTeam!.HomeStadium : match.AwayTeam!.HomeStadium,
+                IsHomeStadium = match.IsHomeStadium ? true : false,
+                KickoffStatus = match.KickoffStatus,
+                IsGameFinish = match.IsGameFinish
             }).ToList();
 
             return Results.Ok(new
             {
                 statusCode = 200,
                 message = "Success.",
-                data = matchDetails
+                content = matchDetails
             });
         }).RequireAuthorization();
 
         app.MapGet("/matches/upcoming", async (EPLContext context) =>
         {
             var upcomingMatches = await context.Matches.Include(h => h.HomeTeam).Include(a => a.AwayTeam)
-                .Where(match => match.Status == 1 && match.MatchDate > DateTime.Now)
+                .Where(match => match.KickoffStatus == 1 && match.IsGameFinish == false)
                 .OrderBy(match => match.MatchDate)
                 .ToListAsync();
 
@@ -329,15 +387,17 @@ public static class MatchEndpoints
                 {
                     statusCode = 200,
                     message = "No upcoming matches.",
-                    data = new List<MatchDetailDto>()
+                    content = new List<MatchDetailDto>()
                 });
             }
 
             var matchDetails = upcomingMatches.Select(match => new MatchDetailDto
             {
                 MatchId = match.Id,
-                MatchDate = match.MatchDate.ToString("dddd, dd-MM-yyyy"),
-                MatchTime = match.MatchDate.ToString("HH:mm tt"),
+                MatchDateFormat = match.MatchDate.ToString("dddd, dd-MM-yyyy"),
+                MatchTimeFormat = DateTime.Parse(match.MatchTime.ToString()).ToString("HH:mm tt"),
+                MatchDate = match.MatchDate,
+                MatchTime = match.MatchTime,
                 HomeTeamId = match.HomeTeamId,
                 AwayTeamId = match.AwayTeamId,
                 HomeTeamName = match.HomeTeam!.Name,
@@ -346,16 +406,17 @@ public static class MatchEndpoints
                 AwayTeamClubCrest = match.AwayTeam.ClubCrest,
                 HomeTeamScore = match.HomeTeamScore,
                 AwayTeamScore = match.AwayTeamScore,
-                KickoffStadium = match.HomeTeam.HomeStadium,
-                Status = match.Status,
-                IsFinish = match.MatchDate.AddMinutes(90) < DateTime.Now ? true : false
+                KickoffStadium = match.IsHomeStadium ? match.HomeTeam!.HomeStadium : match.AwayTeam!.HomeStadium,
+                IsHomeStadium = match.IsHomeStadium ? true : false,
+                KickoffStatus = match.KickoffStatus,
+                IsGameFinish = match.IsGameFinish
             }).ToList();
-            
+
             return Results.Ok(new
             {
                 statusCode = 200,
                 message = "Success.",
-                data = matchDetails
+                content = matchDetails
             });
         }).RequireAuthorization();
 

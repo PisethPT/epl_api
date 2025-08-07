@@ -5,12 +5,15 @@ namespace epl_api.Models;
 public class Match
 {
     public int Id { get; set; }
-    public DateTime MatchDate { get; set; }
+    public required DateOnly MatchDate { get; set; }
+    public required TimeSpan MatchTime { get; set; }
     public int HomeTeamScore { get; set; }
     public int AwayTeamScore { get; set; }
-    public int HomeTeamId { get; set; }
-    public int AwayTeamId { get; set; }
-    public int Status { get; set; }
+    public required int HomeTeamId { get; set; }
+    public required int AwayTeamId { get; set; }
+    public int KickoffStatus { get; set; }
+    public bool IsGameFinish { get; set; }
+    public bool IsHomeStadium { get; set; }
 
     [JsonIgnore]
     public virtual Team? HomeTeam { get; set; }

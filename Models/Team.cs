@@ -12,6 +12,7 @@ public class Team
     public int Founded { get; set; }
     public required string HomeStadium { get; set; }
     public required string HeadCoach { get; set; }
+    public required string WebsiteUrl { get; set; }
 
     [JsonIgnore]
     public virtual ICollection<Player> Players { get; set; } = new List<Player>();

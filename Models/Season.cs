@@ -12,8 +12,8 @@ public class Season
     /// </summary>
     /// <value>2024/2025</value>
     public required string Name { get; set; }
-    public DateTime StartDate { get; set; }
-    public DateTime EndDate { get; set; }
+    public DateOnly StartDate { get; set; }
+    public DateOnly EndDate { get; set; }
 
     [JsonIgnore]
     public virtual ICollection<MatchSeason> MatchSeasons { get; set; } = new List<MatchSeason>();

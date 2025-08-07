@@ -53,7 +53,8 @@ public static class TeamEndpoints
                 City = model.City,
                 HomeStadium = model.HomeStadium,
                 HeadCoach = model.HeadCoach,
-                ClubCrest = fileName
+                ClubCrest = fileName,
+                WebsiteUrl = model.WebsiteUrl ?? string.Empty
             };
             context.Teams.Add(team);
             await context.SaveChangesAsync();
@@ -97,6 +98,7 @@ public static class TeamEndpoints
             existingTeam.City = string.IsNullOrEmpty(model.City) ? existingTeam.City : model.City;
             existingTeam.HomeStadium = string.IsNullOrEmpty(model.HomeStadium) ? existingTeam.HomeStadium : model.HomeStadium;
             existingTeam.HeadCoach = string.IsNullOrEmpty(model.HeadCoach) ? existingTeam.HeadCoach : model.HeadCoach;
+            existingTeam.WebsiteUrl = string.IsNullOrEmpty(model.WebsiteUrl) ? existingTeam.WebsiteUrl : model.WebsiteUrl;
             if (!string.IsNullOrEmpty(fileName))
                 existingTeam.ClubCrest = fileName;
 

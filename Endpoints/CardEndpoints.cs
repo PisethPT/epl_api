@@ -12,49 +12,92 @@ public static class CardEndpoints
     {
         app.MapGet("/cards", async (EPLContext context, string? query) =>
         {
-            var cards = await context.Cards.Include(card => card.Match)
-                                            .Include(card => card.Player)
-                                            .Include(card => card.Team)
-                                            .OrderByDescending(card => card.Id)
-                                            .ToListAsync();
+            var cardsQuery = context.Cards
+            .Include(card => card.Match)
+                .ThenInclude(match => match!.HomeTeam)
+            .Include(card => card.Match)
+                .ThenInclude(match => match!.AwayTeam)
+            .Include(card => card.Player)
+            .Include(card => card.Team)
+            .AsQueryable();
+
+            if (!string.IsNullOrWhiteSpace(query))
+            {
+                var lowerQuery = query.ToLower();
+                cardsQuery = cardsQuery.Where(card =>
+                    (card.Player != null && (
+                    card.Player.FirstName.ToLower().Contains(lowerQuery) ||
+                    card.Player.LastName.ToLower().Contains(lowerQuery)
+                    )) ||
+                    (card.Team != null && card.Team.Name.ToLower().Contains(lowerQuery)) ||
+                    (card.Match != null && (
+                    (card.Match.HomeTeam != null && card.Match.HomeTeam.Name.ToLower().Contains(lowerQuery)) ||
+                    (card.Match.AwayTeam != null && card.Match.AwayTeam.Name.ToLower().Contains(lowerQuery))
+                    ))
+                );
+            }
+
+            var cards = await cardsQuery
+            .OrderByDescending(card => card.Id)
+            .ToListAsync();
+
+            if (cards.Any(card => card.Match == null))
+            {
+                return Results.BadRequest(new
+                {
+                    statusCode = 400,
+                    message = "One or more cards have a missing match."
+                });
+            }
+
             return Results.Ok(new
             {
                 statusCode = 200,
                 message = "Cards retrieved successfully",
                 length = cards.Count,
-                data = cards.Select(card => new
+                content = cards.Select(card => new
                 {
                     card.Id,
                     CardType = card.Type == 0 ? "Yellow" : "Red",
                     card.Minutes,
                     card.MatchId,
-                    Match = new
+                    Match = card.Match == null ? null : new
                     {
-                        card.Match!.Id,
+                        card.Match.Id,
                         card.Match.HomeTeamId,
                         card.Match.AwayTeamId,
                         card.Match.MatchDate,
+                        card.Match.MatchTime,
+                        HomeTeamName = card.Match.HomeTeam?.Name ?? "",
+                        AwayTeamName = card.Match.AwayTeam?.Name ?? "",
+                        HomeTeamClubCrest = card.Match.HomeTeam?.ClubCrest ?? "",
+                        AwayTeamClubCrest = card.Match.AwayTeam?.ClubCrest ?? "",
                     },
-                    Player = new
+                    Player = card.Player == null ? null : new
                     {
-                        card.Player!.Id,
+                        card.Player.Id,
                         card.Player.FirstName,
                         card.Player.LastName,
                         card.Player.Position,
+                        card.Player.PlayerNumber,
+                        card.Player.Photo,
                     },
-                    Team = new
+                    Team = card.Team == null ? null : new
                     {
-                        card.Team!.Id,
+                        card.Team.Id,
                         card.Team.Name,
                         card.Team.ClubCrest
                     }
                 })
             });
-        });
+        }).RequireAuthorization();
 
         app.MapGet("/cards/{id:int}", async (EPLContext context, int id) =>
         {
             var card = await context.Cards.Include(card => card.Match)
+                                            .ThenInclude(match => match!.HomeTeam)
+                                            .Include(card => card.Match)
+                                            .ThenInclude(match => match!.AwayTeam)
                                            .Include(card => card.Player)
                                            .Include(card => card.Team)
                                            .FirstOrDefaultAsync(c => c.Id == id);
@@ -66,29 +109,36 @@ public static class CardEndpoints
             {
                 statusCode = 200,
                 message = "Card retrieved successfully",
-                data = new
+                content = new
                 {
                     card.Id,
                     CardType = card.Type == 0 ? "Yellow" : "Red",
                     card.Minutes,
                     card.MatchId,
-                    Match = new
+                    Match = card.Match == null ? null : new
                     {
-                        card.Match!.Id,
+                        card.Match.Id,
                         card.Match.HomeTeamId,
                         card.Match.AwayTeamId,
                         card.Match.MatchDate,
+                        card.Match.MatchTime,
+                        HomeTeamName = card.Match.HomeTeam?.Name ?? "",
+                        AwayTeamName = card.Match.AwayTeam?.Name ?? "",
+                        HomeTeamClubCrest = card.Match.HomeTeam?.ClubCrest ?? "",
+                        AwayTeamClubCrest = card.Match.AwayTeam?.ClubCrest ?? "",
                     },
-                    Player = new
+                    Player = card.Player == null ? null : new
                     {
-                        card.Player!.Id,
+                        card.Player.Id,
                         card.Player.FirstName,
                         card.Player.LastName,
                         card.Player.Position,
+                        card.Player.PlayerNumber,
+                        card.Player.Photo,
                     },
-                    Team = new
+                    Team = card.Team == null ? null : new
                     {
-                        card.Team!.Id,
+                        card.Team.Id,
                         card.Team.Name,
                         card.Team.ClubCrest
                     }
@@ -129,10 +179,10 @@ public static class CardEndpoints
             {
                 statusCode = 201,
                 message = "Card created successfully",
-                data = card
+                content = card
             });
         }).DisableAntiforgery()
-        .RequireAuthorization("AdminOnly");
+        .RequireAuthorization("OnlyAdmin");
 
         app.MapPut("/cards/edit/{id:int}", async (EPLContext context, [FromForm] CardDto model, int id) =>
         {
@@ -161,10 +211,10 @@ public static class CardEndpoints
             }
 
             existingCard.Type = model.Type;
-            existingCard.Minutes = model.Minutes;
-            existingCard.MatchId = model.MatchId;
-            existingCard.PlayerId = model.PlayerId;
-            existingCard.TeamId = model.TeamId;
+            existingCard.Minutes = model.Minutes != 0 ? model.Minutes : existingCard.Minutes;
+            existingCard.MatchId = model.MatchId != 0 ? model.MatchId : existingCard.MatchId;
+            existingCard.PlayerId = model.PlayerId != 0 ? model.PlayerId : existingCard.PlayerId;
+            existingCard.TeamId = model.TeamId != 0 ? model.TeamId : existingCard.TeamId;
             context.Cards.Update(existingCard);
             await context.SaveChangesAsync();
 
@@ -172,37 +222,11 @@ public static class CardEndpoints
             {
                 statusCode = 200,
                 message = "Card updated successfully",
-                data = new
-                {
-                    existingCard.Id,
-                    CardType = existingCard.Type == 0 ? "Yellow" : "Red",
-                    existingCard.Minutes,
-                    existingCard.MatchId,
-                    Match = new
-                    {
-                        existingCard.Match!.Id,
-                        existingCard.Match.HomeTeamId,
-                        existingCard.Match.AwayTeamId,
-                        existingCard.Match.MatchDate,
-                    },
-                    Player = new
-                    {
-                        existingCard.Player!.Id,
-                        existingCard.Player.FirstName,
-                        existingCard.Player.LastName,
-                        existingCard.Player.Position,
-                    },
-                    Team = new
-                    {
-                        existingCard.Team!.Id,
-                        existingCard.Team.Name,
-                        existingCard.Team.ClubCrest
-                    }
-                }
+                content = existingCard,
             });
 
         }).DisableAntiforgery()
-        .RequireAuthorization("AdminOnly");
+        .RequireAuthorization("OnlyAdmin");
 
         app.MapDelete("/cards/delete/{id:int}", async (EPLContext context, int id) =>
         {
@@ -223,6 +247,6 @@ public static class CardEndpoints
                 statusCode = 200,
                 message = "Card deleted successfully"
             });
-        }).RequireAuthorization("AdminOnly");
+        }).RequireAuthorization("OnlyAdmin");
     }
 }

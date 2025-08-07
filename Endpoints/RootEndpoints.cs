@@ -90,7 +90,8 @@ public static class RootEndpoints
                 {
                     token = new JwtSecurityTokenHandler().WriteToken(token),
                     expiration = token.ValidTo,
-                    userName = string.Concat(user.FirstName, " ", user.LastName)
+                    userName = string.Concat(user.FirstName, " ", user.LastName),
+                    userId = httpContext.Session.GetString("UserId")
                 });
             }
             return Results.Unauthorized();

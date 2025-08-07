@@ -10,38 +10,73 @@ public static class GoalEndpoints
 {
     public static void MapGoals(this WebApplication app)
     {
-        app.MapGet("/goals", async (EPLContext context) =>
+        app.MapGet("/goals", async (EPLContext context, string? query) =>
         {
-            var goals = await context.Goals.Include(g => g.Match)
-                                            .Include(g => g.Player)
-                                            .Include(g => g.Team)
-                                            .OrderByDescending(g => g.Id)
-                                            .ToListAsync();
+            var goalsQuery = context.Goals.Include(goal => goal.Match)
+                                                .ThenInclude(match => match!.HomeTeam)
+                                            .Include(goal => goal.Match)
+                                                .ThenInclude(match => match!.AwayTeam)
+                                            .Include(goal => goal.Player)
+                                            .Include(goal => goal.Team)
+                                            .OrderByDescending(goal => goal.Id)
+                                            .AsQueryable();
+
+            if (!string.IsNullOrWhiteSpace(query))
+            {
+                var lowerQuery = query.ToLower();
+                goalsQuery = goalsQuery.Where(goal =>
+                    (goal.Player != null && (goal.Player.FirstName.ToLower().Contains(lowerQuery) || goal.Player.LastName.ToLower().Contains(lowerQuery))) ||
+                    (goal.Team != null && goal.Team.Name.ToLower().Contains(lowerQuery)) ||
+                    (goal.Match != null && (
+                        (goal.Match.HomeTeam != null && goal.Match.HomeTeam.Name.ToLower().Contains(lowerQuery)) ||
+                        (goal.Match.AwayTeam != null && goal.Match.AwayTeam.Name.ToLower().Contains(lowerQuery))
+                    ))
+                );
+            }
+
+            var goals = await goalsQuery.OrderByDescending(goad => goad.Id).ToListAsync();
+
+            if (goals.Any(goal => goal.Match == null))
+            {
+                return Results.BadRequest(new
+                {
+                    statusCode = 400,
+                    message = "One or more cards have a missing match."
+                });
+            }
+
             return Results.Ok(new
             {
                 statusCode = 200,
                 message = "Goals retrieved successfully",
                 length = goals.Count,
-                data = goals.Select(goal => new
+                content = goals.Select(goal => new
                 {
                     goal.Id,
                     goal.minutes,
                     goal.MatchId,
-                    Match = new
+                    Match = goal.Match == null ? null : new
                     {
                         goal.Match!.Id,
                         goal.Match.HomeTeamId,
                         goal.Match.AwayTeamId,
                         goal.Match.MatchDate,
+                        goal.Match.MatchTime,
+                        HomeTeamName = goal.Match.HomeTeam?.Name ?? "",
+                        AwayTeamName = goal.Match.AwayTeam?.Name ?? "",
+                        HomeTeamClubCrest = goal.Match.HomeTeam?.ClubCrest ?? "",
+                        AwayTeamClubCrest = goal.Match.AwayTeam?.ClubCrest ?? "",
                     },
-                    Player = new
+                    Player = goal.Player == null ? null : new
                     {
                         goal.Player!.Id,
                         goal.Player.FirstName,
                         goal.Player.LastName,
                         goal.Player.Position,
+                        goal.Player.PlayerNumber,
+                        goal.Player.Photo,
                     },
-                    Team = new
+                    Team = goal.Team == null ? null : new
                     {
                         goal.Team!.Id,
                         goal.Team.Name,
@@ -49,11 +84,14 @@ public static class GoalEndpoints
                     }
                 })
             });
-        });
+        }).RequireAuthorization();
 
         app.MapGet("/goals/{id:int}", async (EPLContext context, int id) =>
         {
             var goal = await context.Goals.Include(g => g.Match)
+                                            .ThenInclude(match => match!.HomeTeam)
+                                          .Include(g => g.Match)
+                                            .ThenInclude(match => match!.AwayTeam)
                                           .Include(g => g.Player)
                                           .Include(g => g.Team)
                                           .FirstOrDefaultAsync(g => g.Id == id);
@@ -65,26 +103,33 @@ public static class GoalEndpoints
             {
                 statusCode = 200,
                 message = "Goal retrieved successfully",
-                data = new
+                content = new
                 {
                     goal.Id,
                     goal.minutes,
                     goal.MatchId,
-                    Match = new
+                    Match = goal.Match == null ? null : new
                     {
                         goal.Match!.Id,
                         goal.Match.HomeTeamId,
                         goal.Match.AwayTeamId,
                         goal.Match.MatchDate,
+                        goal.Match.MatchTime,
+                        HomeTeamName = goal.Match.HomeTeam?.Name ?? "",
+                        AwayTeamName = goal.Match.AwayTeam?.Name ?? "",
+                        HomeTeamClubCrest = goal.Match.HomeTeam?.ClubCrest ?? "",
+                        AwayTeamClubCrest = goal.Match.AwayTeam?.ClubCrest ?? "",
                     },
-                    Player = new
+                    Player = goal.Player == null ? null : new
                     {
                         goal.Player!.Id,
                         goal.Player.FirstName,
                         goal.Player.LastName,
                         goal.Player.Position,
+                        goal.Player.PlayerNumber,
+                        goal.Player.Photo,
                     },
-                    Team = new
+                    Team = goal.Team == null ? null : new
                     {
                         goal.Team!.Id,
                         goal.Team.Name,
@@ -94,9 +139,9 @@ public static class GoalEndpoints
             });
         }).RequireAuthorization();
 
-        app.MapPost("/goals/create", async(EPLContext context, [FromForm] GoalDto model) =>
+        app.MapPost("/goals/create", async (EPLContext context, [FromForm] GoalDto model) =>
         {
-            if(model is null)
+            if (model is null)
             {
                 return Results.BadRequest(new { statusCode = 400, message = "Invalid goal data" });
             }
@@ -105,7 +150,7 @@ public static class GoalEndpoints
             {
                 return Results.BadRequest(new { statusCode = 400, message = "Invalid goal data" });
             }
-            
+
             var existingGoal = await context.Goals.FirstOrDefaultAsync(g => g.MatchId == model.MatchId &&
                                                                             g.PlayerId == model.PlayerId &&
                                                                             g.TeamId == model.TeamId &&
@@ -134,12 +179,12 @@ public static class GoalEndpoints
             {
                 statusCode = 201,
                 message = "Goal created successfully",
-                data = goal
+                content = goal
             });
         }).DisableAntiforgery()
-        .RequireAuthorization("AdminOnly");
+        .RequireAuthorization("OnlyAdmin");
 
-        app.MapPut("/goals/edit/{id:int}", async (EPLContext context, [FromBody] GoalDto model, int id) =>
+        app.MapPut("/goals/edit/{id:int}", async (EPLContext context, [FromForm] GoalDto model, int id) =>
         {
             var goal = await context.Goals.FindAsync(id);
             if (goal == null)
@@ -159,10 +204,10 @@ public static class GoalEndpoints
             {
                 statusCode = 200,
                 message = "Goal updated successfully",
-                data = goal
+                content = goal
             });
         }).DisableAntiforgery()
-        .RequireAuthorization("AdminOnly");
+        .RequireAuthorization("OnlyAdmin");
 
         app.MapDelete("/goals/delete/{id:int}", async (EPLContext context, int id) =>
         {
@@ -180,6 +225,6 @@ public static class GoalEndpoints
                 statusCode = 200,
                 message = "Goal deleted successfully"
             });
-        }).RequireAuthorization("AdminOnly");
+        }).RequireAuthorization("OnlyAdmin");
     }
 }

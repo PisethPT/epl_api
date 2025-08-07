@@ -21,7 +21,7 @@ public static class SeasonEndpoints
             {
                 statusCode = 200,
                 message = "Seasons retrieved successfully",
-                data = seasons
+                content = seasons
             });
         });
 
@@ -39,7 +39,7 @@ public static class SeasonEndpoints
             {
                 statusCode = 200,
                 message = "Season retrieved is successfully",
-                data = season
+                content = season
             });
         }).RequireAuthorization();
 
@@ -74,7 +74,7 @@ public static class SeasonEndpoints
                 {
                     statusCode = 409,
                     message = "This season is already exist season",
-                    data = existingSeason
+                    content = existingSeason
                 });
 
             var season = new Season
@@ -89,7 +89,7 @@ public static class SeasonEndpoints
             {
                 statusCode = 201,
                 message = "Season created successfully",
-                data = season
+                content = season
             });
         }).DisableAntiforgery()
         .RequireAuthorization("OnlyAdmin");
@@ -120,7 +120,7 @@ public static class SeasonEndpoints
                 {
                     statusCode = 409,
                     message = "Season already exist name, start year or end year of season",
-                    data = duplicateSeason
+                    content = duplicateSeason
                 });
 
             existingSeason.Name = string.IsNullOrEmpty(model.Name) ? existingSeason.Name : model.Name;
@@ -133,7 +133,7 @@ public static class SeasonEndpoints
             {
                 statusCode = 200,
                 message = "Season updated successfully",
-                data = existingSeason
+                content = existingSeason
             });
         }).DisableAntiforgery()
         .RequireAuthorization("OnlyAdmin");

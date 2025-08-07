@@ -1,104 +1,216 @@
 {
   "Files": [
     {
-      "Id": "D:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\News\\1-RELEASED-LIST.webp",
+      "Id": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\News\\1-RELEASED-LIST.webp",
       "PackagePath": "staticwebassets\\News\\1-RELEASED-LIST.webp"
     },
     {
-      "Id": "D:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\News\\Placeholder-lead.webp",
+      "Id": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\News\\Alexander-Isak-2.webp",
+      "PackagePath": "staticwebassets\\News\\Alexander-Isak-2.webp"
+    },
+    {
+      "Id": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\News\\Friendlies-lead.webp",
+      "PackagePath": "staticwebassets\\News\\Friendlies-lead.webp"
+    },
+    {
+      "Id": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\News\\Kits.webp",
+      "PackagePath": "staticwebassets\\News\\Kits.webp"
+    },
+    {
+      "Id": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\News\\Placeholder-lead.webp",
       "PackagePath": "staticwebassets\\News\\Placeholder-lead.webp"
     },
     {
-      "Id": "D:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\News\\wrirtz.webp",
+      "Id": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\News\\wrirtz.webp",
       "PackagePath": "staticwebassets\\News\\wrirtz.webp"
     },
     {
-      "Id": "D:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\ben_white.png",
+      "Id": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\Leander_dendoncker.png",
+      "PackagePath": "staticwebassets\\Players\\Leander_dendoncker.png"
+    },
+    {
+      "Id": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\ben_white.png",
       "PackagePath": "staticwebassets\\Players\\ben_white.png"
     },
     {
-      "Id": "D:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\david_raya.png",
+      "Id": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\david_raya.png",
       "PackagePath": "staticwebassets\\Players\\david_raya.png"
     },
     {
-      "Id": "D:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\gabriel_magalhães.png",
+      "Id": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\emiliano_buendía.png",
+      "PackagePath": "staticwebassets\\Players\\emiliano_buendía.png"
+    },
+    {
+      "Id": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\emiliano_martínez.png",
+      "PackagePath": "staticwebassets\\Players\\emiliano_martínez.png"
+    },
+    {
+      "Id": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\enzo_barrenechea.png",
+      "PackagePath": "staticwebassets\\Players\\enzo_barrenechea.png"
+    },
+    {
+      "Id": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\ezri_konsa.png",
+      "PackagePath": "staticwebassets\\Players\\ezri_konsa.png"
+    },
+    {
+      "Id": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\filip_marschall.png",
+      "PackagePath": "staticwebassets\\Players\\filip_marschall.png"
+    },
+    {
+      "Id": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\gabriel_magalhães.png",
       "PackagePath": "staticwebassets\\Players\\gabriel_magalhães.png"
     },
     {
-      "Id": "D:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\jakub_kiwior.png",
+      "Id": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\jakub_kiwior.png",
       "PackagePath": "staticwebassets\\Players\\jakub_kiwior.png"
     },
     {
-      "Id": "D:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\jurriën_timber.png",
+      "Id": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\james_trafford.png",
+      "PackagePath": "staticwebassets\\Players\\james_trafford.png"
+    },
+    {
+      "Id": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\joe_gauci.png",
+      "PackagePath": "staticwebassets\\Players\\joe_gauci.png"
+    },
+    {
+      "Id": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\jordan_beyer.png",
+      "PackagePath": "staticwebassets\\Players\\jordan_beyer.png"
+    },
+    {
+      "Id": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\jurriën_timber.png",
       "PackagePath": "staticwebassets\\Players\\jurriën_timber.png"
     },
     {
-      "Id": "D:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\kieran_tierney.png",
+      "Id": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\kieran_tierney.png",
       "PackagePath": "staticwebassets\\Players\\kieran_tierney.png"
     },
     {
-      "Id": "D:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\martin_qdegaard.png",
+      "Id": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\kosta_nedeljkovic.png",
+      "PackagePath": "staticwebassets\\Players\\kosta_nedeljkovic.png"
+    },
+    {
+      "Id": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\lamare_bogarde.png",
+      "PackagePath": "staticwebassets\\Players\\lamare_bogarde.png"
+    },
+    {
+      "Id": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\leon_bailey.png",
+      "PackagePath": "staticwebassets\\Players\\leon_bailey.png"
+    },
+    {
+      "Id": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\lucas_digne.png",
+      "PackagePath": "staticwebassets\\Players\\lucas_digne.png"
+    },
+    {
+      "Id": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\martin_qdegaard.png",
       "PackagePath": "staticwebassets\\Players\\martin_qdegaard.png"
     },
     {
-      "Id": "D:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\neto.png",
+      "Id": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\matty_cash.png",
+      "PackagePath": "staticwebassets\\Players\\matty_cash.png"
+    },
+    {
+      "Id": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\neto.png",
       "PackagePath": "staticwebassets\\Players\\neto.png"
     },
     {
-      "Id": "D:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\oleksandr_zinchenko.png",
+      "Id": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\oleksandr_zinchenko.png",
       "PackagePath": "staticwebassets\\Players\\oleksandr_zinchenko.png"
     },
     {
-      "Id": "D:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\ricardo_calafiori.png",
+      "Id": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\pau_torres.png",
+      "PackagePath": "staticwebassets\\Players\\pau_torres.png"
+    },
+    {
+      "Id": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\ricardo_calafiori.png",
       "PackagePath": "staticwebassets\\Players\\ricardo_calafiori.png"
     },
     {
-      "Id": "D:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\takehiro_tomiyasu.png",
+      "Id": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\ross_barkley.png",
+      "PackagePath": "staticwebassets\\Players\\ross_barkley.png"
+    },
+    {
+      "Id": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\takehiro_tomiyasu.png",
       "PackagePath": "staticwebassets\\Players\\takehiro_tomiyasu.png"
     },
     {
-      "Id": "D:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\thomas_partey.png",
+      "Id": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\thomas_partey.png",
       "PackagePath": "staticwebassets\\Players\\thomas_partey.png"
     },
     {
-      "Id": "D:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\william_saliba.png",
+      "Id": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\tyrone_mings.png",
+      "PackagePath": "staticwebassets\\Players\\tyrone_mings.png"
+    },
+    {
+      "Id": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\william_saliba.png",
       "PackagePath": "staticwebassets\\Players\\william_saliba.png"
     },
     {
-      "Id": "D:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\TeamLogos\\ars.png",
+      "Id": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\TeamLogos\\ars.png",
       "PackagePath": "staticwebassets\\TeamLogos\\ars.png"
     },
     {
-      "Id": "D:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\TeamLogos\\avl.png",
+      "Id": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\TeamLogos\\avl.png",
       "PackagePath": "staticwebassets\\TeamLogos\\avl.png"
     },
     {
-      "Id": "D:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\TeamLogos\\bhr.png",
+      "Id": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\TeamLogos\\bhr.png",
       "PackagePath": "staticwebassets\\TeamLogos\\bhr.png"
     },
     {
-      "Id": "D:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\TeamLogos\\bou.png",
+      "Id": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\TeamLogos\\bou.png",
       "PackagePath": "staticwebassets\\TeamLogos\\bou.png"
     },
     {
-      "Id": "D:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\TeamLogos\\bre.png",
+      "Id": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\TeamLogos\\bre.png",
       "PackagePath": "staticwebassets\\TeamLogos\\bre.png"
     },
     {
-      "Id": "D:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\TeamLogos\\che.png",
+      "Id": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\TeamLogos\\bunley.svg",
+      "PackagePath": "staticwebassets\\TeamLogos\\bunley.svg"
+    },
+    {
+      "Id": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\TeamLogos\\che.png",
       "PackagePath": "staticwebassets\\TeamLogos\\che.png"
     },
     {
-      "Id": "D:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\TeamLogos\\cry.png",
+      "Id": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\TeamLogos\\cry.png",
       "PackagePath": "staticwebassets\\TeamLogos\\cry.png"
     },
     {
-      "Id": "D:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\TeamLogos\\eve.png",
+      "Id": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\TeamLogos\\eve.png",
       "PackagePath": "staticwebassets\\TeamLogos\\eve.png"
     },
     {
-      "Id": "D:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\TeamLogos\\ful.png",
+      "Id": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\TeamLogos\\ful.png",
       "PackagePath": "staticwebassets\\TeamLogos\\ful.png"
+    },
+    {
+      "Id": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\TeamLogos\\ips.png",
+      "PackagePath": "staticwebassets\\TeamLogos\\ips.png"
+    },
+    {
+      "Id": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\TeamLogos\\lei.png",
+      "PackagePath": "staticwebassets\\TeamLogos\\lei.png"
+    },
+    {
+      "Id": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\TeamLogos\\liv.png",
+      "PackagePath": "staticwebassets\\TeamLogos\\liv.png"
+    },
+    {
+      "Id": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\TeamLogos\\mci.png",
+      "PackagePath": "staticwebassets\\TeamLogos\\mci.png"
+    },
+    {
+      "Id": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\TeamLogos\\mun.png",
+      "PackagePath": "staticwebassets\\TeamLogos\\mun.png"
+    },
+    {
+      "Id": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\TeamLogos\\new.png",
+      "PackagePath": "staticwebassets\\TeamLogos\\new.png"
+    },
+    {
+      "Id": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\TeamLogos\\sou.png",
+      "PackagePath": "staticwebassets\\TeamLogos\\sou.png"
     },
     {
       "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.build.epl_api.props",

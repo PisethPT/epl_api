@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ZnFDPVmcMN1f/LOryc+woIm5jndiYemksuiYrATFKok=",
+  "Hash": "I6vHX4ohnLKPpS7cRkfKAO8uPp1AvRXpM0ih3SQPJz4=",
   "Source": "epl_api",
   "BasePath": "_content/epl_api",
   "Mode": "Default",
@@ -10,17 +10,38 @@
     {
       "Name": "epl_api\\wwwroot",
       "Source": "epl_api",
-      "ContentRoot": "D:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\",
+      "ContentRoot": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\",
       "BasePath": "_content/epl_api",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "D:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\News\\1-RELEASED-LIST.webp",
+      "Identity": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\obj\\Debug\\net9.0\\compressed\\2s3rmknc42-bxshmwomhh.gz",
       "SourceId": "epl_api",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\",
+      "ContentRoot": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/epl_api",
+      "RelativePath": "TeamLogos/bunley#[.{fingerprint=bxshmwomhh}]?.svg.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\TeamLogos\\bunley.svg",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "zjfs8wm38j",
+      "Integrity": "v+V/RI4iC38e+v1i5z4DPoyC5QqYE6A2akPjSWBI8I0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\TeamLogos\\bunley.svg"
+    },
+    {
+      "Identity": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\News\\1-RELEASED-LIST.webp",
+      "SourceId": "epl_api",
+      "SourceType": "Discovered",
+      "ContentRoot": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\",
       "BasePath": "_content/epl_api",
       "RelativePath": "News/1-RELEASED-LIST#[.{fingerprint}]?.webp",
       "AssetKind": "All",
@@ -38,10 +59,73 @@
       "OriginalItemSpec": "wwwroot\\News\\1-RELEASED-LIST.webp"
     },
     {
-      "Identity": "D:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\News\\Placeholder-lead.webp",
+      "Identity": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\News\\Alexander-Isak-2.webp",
       "SourceId": "epl_api",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\",
+      "ContentRoot": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\",
+      "BasePath": "_content/epl_api",
+      "RelativePath": "News/Alexander-Isak-2#[.{fingerprint}]?.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ggxb9kjim4",
+      "Integrity": "IKcYgMfcM/dVbHSgAIHtm97iQFmRmvp7dbCwVYpk30g=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\News\\Alexander-Isak-2.webp"
+    },
+    {
+      "Identity": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\News\\Friendlies-lead.webp",
+      "SourceId": "epl_api",
+      "SourceType": "Discovered",
+      "ContentRoot": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\",
+      "BasePath": "_content/epl_api",
+      "RelativePath": "News/Friendlies-lead#[.{fingerprint}]?.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "aa7zwaub0x",
+      "Integrity": "XsiTwgEWcPf8VFsEQUMfKJ4GfcMiMLPDL4epLF+xnzs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\News\\Friendlies-lead.webp"
+    },
+    {
+      "Identity": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\News\\Kits.webp",
+      "SourceId": "epl_api",
+      "SourceType": "Discovered",
+      "ContentRoot": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\",
+      "BasePath": "_content/epl_api",
+      "RelativePath": "News/Kits#[.{fingerprint}]?.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ktvkmknehi",
+      "Integrity": "GHSSDlc4/ohj1leQJN0fU67t6AKlHshQ1mtXlAe4J00=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\News\\Kits.webp"
+    },
+    {
+      "Identity": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\News\\Placeholder-lead.webp",
+      "SourceId": "epl_api",
+      "SourceType": "Discovered",
+      "ContentRoot": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\",
       "BasePath": "_content/epl_api",
       "RelativePath": "News/Placeholder-lead#[.{fingerprint}]?.webp",
       "AssetKind": "All",
@@ -59,10 +143,10 @@
       "OriginalItemSpec": "wwwroot\\News\\Placeholder-lead.webp"
     },
     {
-      "Identity": "D:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\News\\wrirtz.webp",
+      "Identity": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\News\\wrirtz.webp",
       "SourceId": "epl_api",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\",
+      "ContentRoot": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\",
       "BasePath": "_content/epl_api",
       "RelativePath": "News/wrirtz#[.{fingerprint}]?.webp",
       "AssetKind": "All",
@@ -80,10 +164,10 @@
       "OriginalItemSpec": "wwwroot\\News\\wrirtz.webp"
     },
     {
-      "Identity": "D:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\ben_white.png",
+      "Identity": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\ben_white.png",
       "SourceId": "epl_api",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\",
+      "ContentRoot": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\",
       "BasePath": "_content/epl_api",
       "RelativePath": "Players/ben_white#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -101,10 +185,10 @@
       "OriginalItemSpec": "wwwroot\\Players\\ben_white.png"
     },
     {
-      "Identity": "D:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\david_raya.png",
+      "Identity": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\david_raya.png",
       "SourceId": "epl_api",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\",
+      "ContentRoot": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\",
       "BasePath": "_content/epl_api",
       "RelativePath": "Players/david_raya#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -122,10 +206,115 @@
       "OriginalItemSpec": "wwwroot\\Players\\david_raya.png"
     },
     {
-      "Identity": "D:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\gabriel_magalhães.png",
+      "Identity": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\emiliano_buendía.png",
       "SourceId": "epl_api",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\",
+      "ContentRoot": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\",
+      "BasePath": "_content/epl_api",
+      "RelativePath": "Players/emiliano_buendía#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "7khcysj6ni",
+      "Integrity": "5+WcjG8jNL0o7azFFJ9c1iSkFDnZAjW3oDfSQhKtIRU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Players\\emiliano_buendía.png"
+    },
+    {
+      "Identity": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\emiliano_martínez.png",
+      "SourceId": "epl_api",
+      "SourceType": "Discovered",
+      "ContentRoot": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\",
+      "BasePath": "_content/epl_api",
+      "RelativePath": "Players/emiliano_martínez#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "oz23v92v1c",
+      "Integrity": "HKuage7pZQOWAAfe6IGZu+7sh4qj0dwIY4MnpWq3e7g=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Players\\emiliano_martínez.png"
+    },
+    {
+      "Identity": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\enzo_barrenechea.png",
+      "SourceId": "epl_api",
+      "SourceType": "Discovered",
+      "ContentRoot": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\",
+      "BasePath": "_content/epl_api",
+      "RelativePath": "Players/enzo_barrenechea#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "xy0c9nzkz1",
+      "Integrity": "6STXbkUNy5kSIVB+ghNTF0lCAXGAWVCMJy5Bj6qVhyw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Players\\enzo_barrenechea.png"
+    },
+    {
+      "Identity": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\ezri_konsa.png",
+      "SourceId": "epl_api",
+      "SourceType": "Discovered",
+      "ContentRoot": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\",
+      "BasePath": "_content/epl_api",
+      "RelativePath": "Players/ezri_konsa#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "i4hwokc33o",
+      "Integrity": "soblRD+q/38A0h8HRk09FCBlUefEEoAAHRtNnluO5d8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Players\\ezri_konsa.png"
+    },
+    {
+      "Identity": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\filip_marschall.png",
+      "SourceId": "epl_api",
+      "SourceType": "Discovered",
+      "ContentRoot": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\",
+      "BasePath": "_content/epl_api",
+      "RelativePath": "Players/filip_marschall#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "p0vwnh8bm6",
+      "Integrity": "CQBdNRbBq/cFQrbEr9YRmJVis1BPSSlW0uo1UkamBMI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Players\\filip_marschall.png"
+    },
+    {
+      "Identity": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\gabriel_magalhães.png",
+      "SourceId": "epl_api",
+      "SourceType": "Discovered",
+      "ContentRoot": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\",
       "BasePath": "_content/epl_api",
       "RelativePath": "Players/gabriel_magalhães#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -143,10 +332,10 @@
       "OriginalItemSpec": "wwwroot\\Players\\gabriel_magalhães.png"
     },
     {
-      "Identity": "D:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\jakub_kiwior.png",
+      "Identity": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\jakub_kiwior.png",
       "SourceId": "epl_api",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\",
+      "ContentRoot": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\",
       "BasePath": "_content/epl_api",
       "RelativePath": "Players/jakub_kiwior#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -164,10 +353,73 @@
       "OriginalItemSpec": "wwwroot\\Players\\jakub_kiwior.png"
     },
     {
-      "Identity": "D:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\jurriën_timber.png",
+      "Identity": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\james_trafford.png",
       "SourceId": "epl_api",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\",
+      "ContentRoot": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\",
+      "BasePath": "_content/epl_api",
+      "RelativePath": "Players/james_trafford#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "yxm8jx3ilu",
+      "Integrity": "2hJp5CskvhexwAeLt5k0Xi1/96QEJ6KjErLojoAzmug=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Players\\james_trafford.png"
+    },
+    {
+      "Identity": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\joe_gauci.png",
+      "SourceId": "epl_api",
+      "SourceType": "Discovered",
+      "ContentRoot": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\",
+      "BasePath": "_content/epl_api",
+      "RelativePath": "Players/joe_gauci#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "99chmf7q5f",
+      "Integrity": "TbpcvrmTr3kDQQmW2Mc/xP48mT6H+tBYiOqxwDVKLG4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Players\\joe_gauci.png"
+    },
+    {
+      "Identity": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\jordan_beyer.png",
+      "SourceId": "epl_api",
+      "SourceType": "Discovered",
+      "ContentRoot": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\",
+      "BasePath": "_content/epl_api",
+      "RelativePath": "Players/jordan_beyer#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "sibxqir501",
+      "Integrity": "bHW8RA+xEqz6ThepJS6UIAEYWwkXhb6rzC6mof+dZ3k=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Players\\jordan_beyer.png"
+    },
+    {
+      "Identity": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\jurriën_timber.png",
+      "SourceId": "epl_api",
+      "SourceType": "Discovered",
+      "ContentRoot": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\",
       "BasePath": "_content/epl_api",
       "RelativePath": "Players/jurriën_timber#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -185,10 +437,10 @@
       "OriginalItemSpec": "wwwroot\\Players\\jurriën_timber.png"
     },
     {
-      "Identity": "D:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\kieran_tierney.png",
+      "Identity": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\kieran_tierney.png",
       "SourceId": "epl_api",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\",
+      "ContentRoot": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\",
       "BasePath": "_content/epl_api",
       "RelativePath": "Players/kieran_tierney#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -206,10 +458,115 @@
       "OriginalItemSpec": "wwwroot\\Players\\kieran_tierney.png"
     },
     {
-      "Identity": "D:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\martin_qdegaard.png",
+      "Identity": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\kosta_nedeljkovic.png",
       "SourceId": "epl_api",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\",
+      "ContentRoot": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\",
+      "BasePath": "_content/epl_api",
+      "RelativePath": "Players/kosta_nedeljkovic#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "bh645rj2ny",
+      "Integrity": "zxo8ywiEWzEnxE+xkdUNx1lrgzLR+KW3HezHx5pHSl8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Players\\kosta_nedeljkovic.png"
+    },
+    {
+      "Identity": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\lamare_bogarde.png",
+      "SourceId": "epl_api",
+      "SourceType": "Discovered",
+      "ContentRoot": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\",
+      "BasePath": "_content/epl_api",
+      "RelativePath": "Players/lamare_bogarde#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "fgd4j5g6ip",
+      "Integrity": "H8Tb94wxaXdYHzUYla1W4hDNkVTCOIdWxUqLF1iJa1c=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Players\\lamare_bogarde.png"
+    },
+    {
+      "Identity": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\Leander_dendoncker.png",
+      "SourceId": "epl_api",
+      "SourceType": "Discovered",
+      "ContentRoot": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\",
+      "BasePath": "_content/epl_api",
+      "RelativePath": "Players/Leander_dendoncker#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "2wgubpndq4",
+      "Integrity": "/q8IJt4X8Z/otEFEu4nB7slLoohWi0bys2SoZc+RYEA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Players\\Leander_dendoncker.png"
+    },
+    {
+      "Identity": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\leon_bailey.png",
+      "SourceId": "epl_api",
+      "SourceType": "Discovered",
+      "ContentRoot": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\",
+      "BasePath": "_content/epl_api",
+      "RelativePath": "Players/leon_bailey#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "wpmpwcbnnb",
+      "Integrity": "RH8mVDSVhGx1DtttVAAPMS6nZHfCYhpa6YMtAwHGxZE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Players\\leon_bailey.png"
+    },
+    {
+      "Identity": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\lucas_digne.png",
+      "SourceId": "epl_api",
+      "SourceType": "Discovered",
+      "ContentRoot": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\",
+      "BasePath": "_content/epl_api",
+      "RelativePath": "Players/lucas_digne#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "pe2lx6wf7r",
+      "Integrity": "j6d4MkibwxCHAzst6U9/eeIi63NdpRbTACymgH3qUM4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Players\\lucas_digne.png"
+    },
+    {
+      "Identity": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\martin_qdegaard.png",
+      "SourceId": "epl_api",
+      "SourceType": "Discovered",
+      "ContentRoot": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\",
       "BasePath": "_content/epl_api",
       "RelativePath": "Players/martin_qdegaard#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -227,10 +584,31 @@
       "OriginalItemSpec": "wwwroot\\Players\\martin_qdegaard.png"
     },
     {
-      "Identity": "D:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\neto.png",
+      "Identity": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\matty_cash.png",
       "SourceId": "epl_api",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\",
+      "ContentRoot": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\",
+      "BasePath": "_content/epl_api",
+      "RelativePath": "Players/matty_cash#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "syazvobe89",
+      "Integrity": "RDE8ycvGfz0n2JaXv9fLxiSy39ZuQezd2khtA2UgRU4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Players\\matty_cash.png"
+    },
+    {
+      "Identity": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\neto.png",
+      "SourceId": "epl_api",
+      "SourceType": "Discovered",
+      "ContentRoot": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\",
       "BasePath": "_content/epl_api",
       "RelativePath": "Players/neto#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -248,10 +626,10 @@
       "OriginalItemSpec": "wwwroot\\Players\\neto.png"
     },
     {
-      "Identity": "D:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\oleksandr_zinchenko.png",
+      "Identity": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\oleksandr_zinchenko.png",
       "SourceId": "epl_api",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\",
+      "ContentRoot": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\",
       "BasePath": "_content/epl_api",
       "RelativePath": "Players/oleksandr_zinchenko#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -269,10 +647,31 @@
       "OriginalItemSpec": "wwwroot\\Players\\oleksandr_zinchenko.png"
     },
     {
-      "Identity": "D:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\ricardo_calafiori.png",
+      "Identity": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\pau_torres.png",
       "SourceId": "epl_api",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\",
+      "ContentRoot": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\",
+      "BasePath": "_content/epl_api",
+      "RelativePath": "Players/pau_torres#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "nbl4c04vvc",
+      "Integrity": "89BrItkhA15WDORB5+W/luPlY8rgwXNwq/Ma0brpr4Q=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Players\\pau_torres.png"
+    },
+    {
+      "Identity": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\ricardo_calafiori.png",
+      "SourceId": "epl_api",
+      "SourceType": "Discovered",
+      "ContentRoot": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\",
       "BasePath": "_content/epl_api",
       "RelativePath": "Players/ricardo_calafiori#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -290,10 +689,31 @@
       "OriginalItemSpec": "wwwroot\\Players\\ricardo_calafiori.png"
     },
     {
-      "Identity": "D:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\takehiro_tomiyasu.png",
+      "Identity": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\ross_barkley.png",
       "SourceId": "epl_api",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\",
+      "ContentRoot": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\",
+      "BasePath": "_content/epl_api",
+      "RelativePath": "Players/ross_barkley#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "phnhmyah5h",
+      "Integrity": "0/AzPT04LkKfB/JhF30gmmemNjwLPCPtF/ZtEZzBO2Q=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Players\\ross_barkley.png"
+    },
+    {
+      "Identity": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\takehiro_tomiyasu.png",
+      "SourceId": "epl_api",
+      "SourceType": "Discovered",
+      "ContentRoot": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\",
       "BasePath": "_content/epl_api",
       "RelativePath": "Players/takehiro_tomiyasu#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -311,10 +731,10 @@
       "OriginalItemSpec": "wwwroot\\Players\\takehiro_tomiyasu.png"
     },
     {
-      "Identity": "D:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\thomas_partey.png",
+      "Identity": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\thomas_partey.png",
       "SourceId": "epl_api",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\",
+      "ContentRoot": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\",
       "BasePath": "_content/epl_api",
       "RelativePath": "Players/thomas_partey#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -332,10 +752,31 @@
       "OriginalItemSpec": "wwwroot\\Players\\thomas_partey.png"
     },
     {
-      "Identity": "D:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\william_saliba.png",
+      "Identity": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\tyrone_mings.png",
       "SourceId": "epl_api",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\",
+      "ContentRoot": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\",
+      "BasePath": "_content/epl_api",
+      "RelativePath": "Players/tyrone_mings#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "8ff7zhcvy8",
+      "Integrity": "1LDr92jN44p7d9QRpXa8oKZKjXTKz3N+13R5limtnzw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Players\\tyrone_mings.png"
+    },
+    {
+      "Identity": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\william_saliba.png",
+      "SourceId": "epl_api",
+      "SourceType": "Discovered",
+      "ContentRoot": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\",
       "BasePath": "_content/epl_api",
       "RelativePath": "Players/william_saliba#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -353,10 +794,10 @@
       "OriginalItemSpec": "wwwroot\\Players\\william_saliba.png"
     },
     {
-      "Identity": "D:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\TeamLogos\\ars.png",
+      "Identity": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\TeamLogos\\ars.png",
       "SourceId": "epl_api",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\",
+      "ContentRoot": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\",
       "BasePath": "_content/epl_api",
       "RelativePath": "TeamLogos/ars#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -374,10 +815,10 @@
       "OriginalItemSpec": "wwwroot\\TeamLogos\\ars.png"
     },
     {
-      "Identity": "D:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\TeamLogos\\avl.png",
+      "Identity": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\TeamLogos\\avl.png",
       "SourceId": "epl_api",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\",
+      "ContentRoot": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\",
       "BasePath": "_content/epl_api",
       "RelativePath": "TeamLogos/avl#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -395,10 +836,10 @@
       "OriginalItemSpec": "wwwroot\\TeamLogos\\avl.png"
     },
     {
-      "Identity": "D:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\TeamLogos\\bhr.png",
+      "Identity": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\TeamLogos\\bhr.png",
       "SourceId": "epl_api",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\",
+      "ContentRoot": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\",
       "BasePath": "_content/epl_api",
       "RelativePath": "TeamLogos/bhr#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -416,10 +857,10 @@
       "OriginalItemSpec": "wwwroot\\TeamLogos\\bhr.png"
     },
     {
-      "Identity": "D:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\TeamLogos\\bou.png",
+      "Identity": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\TeamLogos\\bou.png",
       "SourceId": "epl_api",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\",
+      "ContentRoot": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\",
       "BasePath": "_content/epl_api",
       "RelativePath": "TeamLogos/bou#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -437,10 +878,10 @@
       "OriginalItemSpec": "wwwroot\\TeamLogos\\bou.png"
     },
     {
-      "Identity": "D:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\TeamLogos\\bre.png",
+      "Identity": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\TeamLogos\\bre.png",
       "SourceId": "epl_api",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\",
+      "ContentRoot": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\",
       "BasePath": "_content/epl_api",
       "RelativePath": "TeamLogos/bre#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -458,10 +899,31 @@
       "OriginalItemSpec": "wwwroot\\TeamLogos\\bre.png"
     },
     {
-      "Identity": "D:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\TeamLogos\\che.png",
+      "Identity": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\TeamLogos\\bunley.svg",
       "SourceId": "epl_api",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\",
+      "ContentRoot": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\",
+      "BasePath": "_content/epl_api",
+      "RelativePath": "TeamLogos/bunley#[.{fingerprint}]?.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "bxshmwomhh",
+      "Integrity": "Uf0yhk0Tqs6Gtm1/icOQVMWW7mpS++7YWbihHiJELvw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\TeamLogos\\bunley.svg"
+    },
+    {
+      "Identity": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\TeamLogos\\che.png",
+      "SourceId": "epl_api",
+      "SourceType": "Discovered",
+      "ContentRoot": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\",
       "BasePath": "_content/epl_api",
       "RelativePath": "TeamLogos/che#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -479,10 +941,10 @@
       "OriginalItemSpec": "wwwroot\\TeamLogos\\che.png"
     },
     {
-      "Identity": "D:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\TeamLogos\\cry.png",
+      "Identity": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\TeamLogos\\cry.png",
       "SourceId": "epl_api",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\",
+      "ContentRoot": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\",
       "BasePath": "_content/epl_api",
       "RelativePath": "TeamLogos/cry#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -500,10 +962,10 @@
       "OriginalItemSpec": "wwwroot\\TeamLogos\\cry.png"
     },
     {
-      "Identity": "D:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\TeamLogos\\eve.png",
+      "Identity": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\TeamLogos\\eve.png",
       "SourceId": "epl_api",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\",
+      "ContentRoot": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\",
       "BasePath": "_content/epl_api",
       "RelativePath": "TeamLogos/eve#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -521,10 +983,10 @@
       "OriginalItemSpec": "wwwroot\\TeamLogos\\eve.png"
     },
     {
-      "Identity": "D:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\TeamLogos\\ful.png",
+      "Identity": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\TeamLogos\\ful.png",
       "SourceId": "epl_api",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\",
+      "ContentRoot": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\",
       "BasePath": "_content/epl_api",
       "RelativePath": "TeamLogos/ful#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -540,12 +1002,159 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\TeamLogos\\ful.png"
+    },
+    {
+      "Identity": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\TeamLogos\\ips.png",
+      "SourceId": "epl_api",
+      "SourceType": "Discovered",
+      "ContentRoot": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\",
+      "BasePath": "_content/epl_api",
+      "RelativePath": "TeamLogos/ips#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ls3va14cof",
+      "Integrity": "9VK8Tq2I95RWXuUHzumYXHjBwm84YRH4RPaKTiRx5nE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\TeamLogos\\ips.png"
+    },
+    {
+      "Identity": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\TeamLogos\\lei.png",
+      "SourceId": "epl_api",
+      "SourceType": "Discovered",
+      "ContentRoot": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\",
+      "BasePath": "_content/epl_api",
+      "RelativePath": "TeamLogos/lei#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "y459qeg7wn",
+      "Integrity": "QpRWTXtfjmBZ7TsknDHfF1P/spnkfbsvxDsP6yDCg6g=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\TeamLogos\\lei.png"
+    },
+    {
+      "Identity": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\TeamLogos\\liv.png",
+      "SourceId": "epl_api",
+      "SourceType": "Discovered",
+      "ContentRoot": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\",
+      "BasePath": "_content/epl_api",
+      "RelativePath": "TeamLogos/liv#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "iq0h1jha0f",
+      "Integrity": "BoU1fBYN+a/YLWVMeQfPtG7y40W5wWi/UbUUN2gO35Q=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\TeamLogos\\liv.png"
+    },
+    {
+      "Identity": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\TeamLogos\\mci.png",
+      "SourceId": "epl_api",
+      "SourceType": "Discovered",
+      "ContentRoot": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\",
+      "BasePath": "_content/epl_api",
+      "RelativePath": "TeamLogos/mci#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "nbhh198017",
+      "Integrity": "81Z7ku1KtAAv8JRBQEDknGs8gmxD40lvTavfgC71LMs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\TeamLogos\\mci.png"
+    },
+    {
+      "Identity": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\TeamLogos\\mun.png",
+      "SourceId": "epl_api",
+      "SourceType": "Discovered",
+      "ContentRoot": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\",
+      "BasePath": "_content/epl_api",
+      "RelativePath": "TeamLogos/mun#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "vx9028wvgk",
+      "Integrity": "U1RkBsEjTvlVqnE9Kw68mv3tkQCppVoXVOxKss8hvjw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\TeamLogos\\mun.png"
+    },
+    {
+      "Identity": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\TeamLogos\\new.png",
+      "SourceId": "epl_api",
+      "SourceType": "Discovered",
+      "ContentRoot": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\",
+      "BasePath": "_content/epl_api",
+      "RelativePath": "TeamLogos/new#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "x3v4knl8lw",
+      "Integrity": "g+nD1McAwFzNdLg2FEIm41Df9jgRCevVLQ1hHqxWpNQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\TeamLogos\\new.png"
+    },
+    {
+      "Identity": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\TeamLogos\\sou.png",
+      "SourceId": "epl_api",
+      "SourceType": "Discovered",
+      "ContentRoot": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\",
+      "BasePath": "_content/epl_api",
+      "RelativePath": "TeamLogos/sou#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ljf1m8k5jf",
+      "Integrity": "D4WCNdJAxm+ti1ueeRNJ328QZ6w+mckr5wBFOsZXcdI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\TeamLogos\\sou.png"
     }
   ],
   "Endpoints": [
     {
       "Route": "News/1-RELEASED-LIST.e5jwdgl3pk.webp",
-      "AssetFile": "D:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\News\\1-RELEASED-LIST.webp",
+      "AssetFile": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\News\\1-RELEASED-LIST.webp",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -590,7 +1199,7 @@
     },
     {
       "Route": "News/1-RELEASED-LIST.webp",
-      "AssetFile": "D:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\News\\1-RELEASED-LIST.webp",
+      "AssetFile": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\News\\1-RELEASED-LIST.webp",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -626,8 +1235,254 @@
       ]
     },
     {
+      "Route": "News/Alexander-Isak-2.ggxb9kjim4.webp",
+      "AssetFile": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\News\\Alexander-Isak-2.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "68764"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"IKcYgMfcM/dVbHSgAIHtm97iQFmRmvp7dbCwVYpk30g=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 28 Jul 2025 21:27:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ggxb9kjim4"
+        },
+        {
+          "Name": "label",
+          "Value": "News/Alexander-Isak-2.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-IKcYgMfcM/dVbHSgAIHtm97iQFmRmvp7dbCwVYpk30g="
+        }
+      ]
+    },
+    {
+      "Route": "News/Alexander-Isak-2.webp",
+      "AssetFile": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\News\\Alexander-Isak-2.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "68764"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"IKcYgMfcM/dVbHSgAIHtm97iQFmRmvp7dbCwVYpk30g=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 28 Jul 2025 21:27:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-IKcYgMfcM/dVbHSgAIHtm97iQFmRmvp7dbCwVYpk30g="
+        }
+      ]
+    },
+    {
+      "Route": "News/Friendlies-lead.aa7zwaub0x.webp",
+      "AssetFile": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\News\\Friendlies-lead.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "117194"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"XsiTwgEWcPf8VFsEQUMfKJ4GfcMiMLPDL4epLF+xnzs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 28 Jul 2025 14:12:54 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "aa7zwaub0x"
+        },
+        {
+          "Name": "label",
+          "Value": "News/Friendlies-lead.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-XsiTwgEWcPf8VFsEQUMfKJ4GfcMiMLPDL4epLF+xnzs="
+        }
+      ]
+    },
+    {
+      "Route": "News/Friendlies-lead.webp",
+      "AssetFile": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\News\\Friendlies-lead.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "117194"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"XsiTwgEWcPf8VFsEQUMfKJ4GfcMiMLPDL4epLF+xnzs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 28 Jul 2025 14:12:54 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-XsiTwgEWcPf8VFsEQUMfKJ4GfcMiMLPDL4epLF+xnzs="
+        }
+      ]
+    },
+    {
+      "Route": "News/Kits.ktvkmknehi.webp",
+      "AssetFile": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\News\\Kits.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "124006"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GHSSDlc4/ohj1leQJN0fU67t6AKlHshQ1mtXlAe4J00=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 28 Jul 2025 22:11:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ktvkmknehi"
+        },
+        {
+          "Name": "label",
+          "Value": "News/Kits.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-GHSSDlc4/ohj1leQJN0fU67t6AKlHshQ1mtXlAe4J00="
+        }
+      ]
+    },
+    {
+      "Route": "News/Kits.webp",
+      "AssetFile": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\News\\Kits.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "124006"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GHSSDlc4/ohj1leQJN0fU67t6AKlHshQ1mtXlAe4J00=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 28 Jul 2025 22:11:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-GHSSDlc4/ohj1leQJN0fU67t6AKlHshQ1mtXlAe4J00="
+        }
+      ]
+    },
+    {
       "Route": "News/Placeholder-lead.iggltp3kzd.webp",
-      "AssetFile": "D:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\News\\Placeholder-lead.webp",
+      "AssetFile": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\News\\Placeholder-lead.webp",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -672,7 +1527,7 @@
     },
     {
       "Route": "News/Placeholder-lead.webp",
-      "AssetFile": "D:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\News\\Placeholder-lead.webp",
+      "AssetFile": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\News\\Placeholder-lead.webp",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -709,7 +1564,7 @@
     },
     {
       "Route": "News/wrirtz.rzs1nkz19i.webp",
-      "AssetFile": "D:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\News\\wrirtz.webp",
+      "AssetFile": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\News\\wrirtz.webp",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -754,7 +1609,7 @@
     },
     {
       "Route": "News/wrirtz.webp",
-      "AssetFile": "D:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\News\\wrirtz.webp",
+      "AssetFile": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\News\\wrirtz.webp",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -791,7 +1646,7 @@
     },
     {
       "Route": "Players/ben_white.eswpx4hrrt.png",
-      "AssetFile": "D:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\ben_white.png",
+      "AssetFile": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\ben_white.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -836,7 +1691,7 @@
     },
     {
       "Route": "Players/ben_white.png",
-      "AssetFile": "D:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\ben_white.png",
+      "AssetFile": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\ben_white.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -873,7 +1728,7 @@
     },
     {
       "Route": "Players/david_raya.png",
-      "AssetFile": "D:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\david_raya.png",
+      "AssetFile": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\david_raya.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -910,7 +1765,7 @@
     },
     {
       "Route": "Players/david_raya.x2dkce43xc.png",
-      "AssetFile": "D:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\david_raya.png",
+      "AssetFile": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\david_raya.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -954,8 +1809,418 @@
       ]
     },
     {
+      "Route": "Players/emiliano_buendía.7khcysj6ni.png",
+      "AssetFile": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\emiliano_buendía.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "114011"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"5+WcjG8jNL0o7azFFJ9c1iSkFDnZAjW3oDfSQhKtIRU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Jul 2025 06:58:54 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "7khcysj6ni"
+        },
+        {
+          "Name": "label",
+          "Value": "Players/emiliano_buendía.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-5+WcjG8jNL0o7azFFJ9c1iSkFDnZAjW3oDfSQhKtIRU="
+        }
+      ]
+    },
+    {
+      "Route": "Players/emiliano_buendía.png",
+      "AssetFile": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\emiliano_buendía.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "114011"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"5+WcjG8jNL0o7azFFJ9c1iSkFDnZAjW3oDfSQhKtIRU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Jul 2025 06:58:54 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-5+WcjG8jNL0o7azFFJ9c1iSkFDnZAjW3oDfSQhKtIRU="
+        }
+      ]
+    },
+    {
+      "Route": "Players/emiliano_martínez.oz23v92v1c.png",
+      "AssetFile": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\emiliano_martínez.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "123821"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"HKuage7pZQOWAAfe6IGZu+7sh4qj0dwIY4MnpWq3e7g=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Jul 2025 06:40:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "oz23v92v1c"
+        },
+        {
+          "Name": "label",
+          "Value": "Players/emiliano_martínez.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-HKuage7pZQOWAAfe6IGZu+7sh4qj0dwIY4MnpWq3e7g="
+        }
+      ]
+    },
+    {
+      "Route": "Players/emiliano_martínez.png",
+      "AssetFile": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\emiliano_martínez.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "123821"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"HKuage7pZQOWAAfe6IGZu+7sh4qj0dwIY4MnpWq3e7g=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Jul 2025 06:40:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-HKuage7pZQOWAAfe6IGZu+7sh4qj0dwIY4MnpWq3e7g="
+        }
+      ]
+    },
+    {
+      "Route": "Players/enzo_barrenechea.png",
+      "AssetFile": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\enzo_barrenechea.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "113309"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6STXbkUNy5kSIVB+ghNTF0lCAXGAWVCMJy5Bj6qVhyw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Jul 2025 06:58:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-6STXbkUNy5kSIVB+ghNTF0lCAXGAWVCMJy5Bj6qVhyw="
+        }
+      ]
+    },
+    {
+      "Route": "Players/enzo_barrenechea.xy0c9nzkz1.png",
+      "AssetFile": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\enzo_barrenechea.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "113309"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6STXbkUNy5kSIVB+ghNTF0lCAXGAWVCMJy5Bj6qVhyw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Jul 2025 06:58:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "xy0c9nzkz1"
+        },
+        {
+          "Name": "label",
+          "Value": "Players/enzo_barrenechea.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-6STXbkUNy5kSIVB+ghNTF0lCAXGAWVCMJy5Bj6qVhyw="
+        }
+      ]
+    },
+    {
+      "Route": "Players/ezri_konsa.i4hwokc33o.png",
+      "AssetFile": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\ezri_konsa.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "114774"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"soblRD+q/38A0h8HRk09FCBlUefEEoAAHRtNnluO5d8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Jul 2025 12:46:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "i4hwokc33o"
+        },
+        {
+          "Name": "label",
+          "Value": "Players/ezri_konsa.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-soblRD+q/38A0h8HRk09FCBlUefEEoAAHRtNnluO5d8="
+        }
+      ]
+    },
+    {
+      "Route": "Players/ezri_konsa.png",
+      "AssetFile": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\ezri_konsa.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "114774"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"soblRD+q/38A0h8HRk09FCBlUefEEoAAHRtNnluO5d8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Jul 2025 12:46:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-soblRD+q/38A0h8HRk09FCBlUefEEoAAHRtNnluO5d8="
+        }
+      ]
+    },
+    {
+      "Route": "Players/filip_marschall.p0vwnh8bm6.png",
+      "AssetFile": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\filip_marschall.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "129166"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CQBdNRbBq/cFQrbEr9YRmJVis1BPSSlW0uo1UkamBMI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Jul 2025 06:39:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "p0vwnh8bm6"
+        },
+        {
+          "Name": "label",
+          "Value": "Players/filip_marschall.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-CQBdNRbBq/cFQrbEr9YRmJVis1BPSSlW0uo1UkamBMI="
+        }
+      ]
+    },
+    {
+      "Route": "Players/filip_marschall.png",
+      "AssetFile": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\filip_marschall.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "129166"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CQBdNRbBq/cFQrbEr9YRmJVis1BPSSlW0uo1UkamBMI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Jul 2025 06:39:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-CQBdNRbBq/cFQrbEr9YRmJVis1BPSSlW0uo1UkamBMI="
+        }
+      ]
+    },
+    {
       "Route": "Players/gabriel_magalhães.j7hr658yp4.png",
-      "AssetFile": "D:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\gabriel_magalhães.png",
+      "AssetFile": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\gabriel_magalhães.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1000,7 +2265,7 @@
     },
     {
       "Route": "Players/gabriel_magalhães.png",
-      "AssetFile": "D:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\gabriel_magalhães.png",
+      "AssetFile": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\gabriel_magalhães.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1037,7 +2302,7 @@
     },
     {
       "Route": "Players/jakub_kiwior.0nfzwz0si4.png",
-      "AssetFile": "D:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\jakub_kiwior.png",
+      "AssetFile": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\jakub_kiwior.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1082,7 +2347,7 @@
     },
     {
       "Route": "Players/jakub_kiwior.png",
-      "AssetFile": "D:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\jakub_kiwior.png",
+      "AssetFile": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\jakub_kiwior.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1118,8 +2383,254 @@
       ]
     },
     {
+      "Route": "Players/james_trafford.png",
+      "AssetFile": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\james_trafford.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "86406"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2hJp5CskvhexwAeLt5k0Xi1/96QEJ6KjErLojoAzmug=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 23 Jul 2025 15:51:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-2hJp5CskvhexwAeLt5k0Xi1/96QEJ6KjErLojoAzmug="
+        }
+      ]
+    },
+    {
+      "Route": "Players/james_trafford.yxm8jx3ilu.png",
+      "AssetFile": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\james_trafford.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "86406"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2hJp5CskvhexwAeLt5k0Xi1/96QEJ6KjErLojoAzmug=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 23 Jul 2025 15:51:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "yxm8jx3ilu"
+        },
+        {
+          "Name": "label",
+          "Value": "Players/james_trafford.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-2hJp5CskvhexwAeLt5k0Xi1/96QEJ6KjErLojoAzmug="
+        }
+      ]
+    },
+    {
+      "Route": "Players/joe_gauci.99chmf7q5f.png",
+      "AssetFile": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\joe_gauci.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "122711"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"TbpcvrmTr3kDQQmW2Mc/xP48mT6H+tBYiOqxwDVKLG4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Jul 2025 06:38:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "99chmf7q5f"
+        },
+        {
+          "Name": "label",
+          "Value": "Players/joe_gauci.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-TbpcvrmTr3kDQQmW2Mc/xP48mT6H+tBYiOqxwDVKLG4="
+        }
+      ]
+    },
+    {
+      "Route": "Players/joe_gauci.png",
+      "AssetFile": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\joe_gauci.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "122711"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"TbpcvrmTr3kDQQmW2Mc/xP48mT6H+tBYiOqxwDVKLG4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Jul 2025 06:38:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-TbpcvrmTr3kDQQmW2Mc/xP48mT6H+tBYiOqxwDVKLG4="
+        }
+      ]
+    },
+    {
+      "Route": "Players/jordan_beyer.png",
+      "AssetFile": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\jordan_beyer.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "98479"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bHW8RA+xEqz6ThepJS6UIAEYWwkXhb6rzC6mof+dZ3k=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 24 Jul 2025 06:11:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-bHW8RA+xEqz6ThepJS6UIAEYWwkXhb6rzC6mof+dZ3k="
+        }
+      ]
+    },
+    {
+      "Route": "Players/jordan_beyer.sibxqir501.png",
+      "AssetFile": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\jordan_beyer.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "98479"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bHW8RA+xEqz6ThepJS6UIAEYWwkXhb6rzC6mof+dZ3k=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 24 Jul 2025 06:11:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "sibxqir501"
+        },
+        {
+          "Name": "label",
+          "Value": "Players/jordan_beyer.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-bHW8RA+xEqz6ThepJS6UIAEYWwkXhb6rzC6mof+dZ3k="
+        }
+      ]
+    },
+    {
       "Route": "Players/jurriën_timber.17jsf1y2u7.png",
-      "AssetFile": "D:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\jurriën_timber.png",
+      "AssetFile": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\jurriën_timber.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1164,7 +2675,7 @@
     },
     {
       "Route": "Players/jurriën_timber.png",
-      "AssetFile": "D:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\jurriën_timber.png",
+      "AssetFile": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\jurriën_timber.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1201,7 +2712,7 @@
     },
     {
       "Route": "Players/kieran_tierney.atv1ycpzdl.png",
-      "AssetFile": "D:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\kieran_tierney.png",
+      "AssetFile": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\kieran_tierney.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1246,7 +2757,7 @@
     },
     {
       "Route": "Players/kieran_tierney.png",
-      "AssetFile": "D:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\kieran_tierney.png",
+      "AssetFile": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\kieran_tierney.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1282,8 +2793,418 @@
       ]
     },
     {
+      "Route": "Players/kosta_nedeljkovic.bh645rj2ny.png",
+      "AssetFile": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\kosta_nedeljkovic.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "115443"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zxo8ywiEWzEnxE+xkdUNx1lrgzLR+KW3HezHx5pHSl8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Jul 2025 06:52:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "bh645rj2ny"
+        },
+        {
+          "Name": "label",
+          "Value": "Players/kosta_nedeljkovic.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-zxo8ywiEWzEnxE+xkdUNx1lrgzLR+KW3HezHx5pHSl8="
+        }
+      ]
+    },
+    {
+      "Route": "Players/kosta_nedeljkovic.png",
+      "AssetFile": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\kosta_nedeljkovic.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "115443"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zxo8ywiEWzEnxE+xkdUNx1lrgzLR+KW3HezHx5pHSl8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Jul 2025 06:52:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-zxo8ywiEWzEnxE+xkdUNx1lrgzLR+KW3HezHx5pHSl8="
+        }
+      ]
+    },
+    {
+      "Route": "Players/lamare_bogarde.fgd4j5g6ip.png",
+      "AssetFile": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\lamare_bogarde.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "95493"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"H8Tb94wxaXdYHzUYla1W4hDNkVTCOIdWxUqLF1iJa1c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Jul 2025 06:41:15 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "fgd4j5g6ip"
+        },
+        {
+          "Name": "label",
+          "Value": "Players/lamare_bogarde.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-H8Tb94wxaXdYHzUYla1W4hDNkVTCOIdWxUqLF1iJa1c="
+        }
+      ]
+    },
+    {
+      "Route": "Players/lamare_bogarde.png",
+      "AssetFile": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\lamare_bogarde.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "95493"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"H8Tb94wxaXdYHzUYla1W4hDNkVTCOIdWxUqLF1iJa1c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Jul 2025 06:41:15 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-H8Tb94wxaXdYHzUYla1W4hDNkVTCOIdWxUqLF1iJa1c="
+        }
+      ]
+    },
+    {
+      "Route": "Players/Leander_dendoncker.2wgubpndq4.png",
+      "AssetFile": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\Leander_dendoncker.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "111290"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/q8IJt4X8Z/otEFEu4nB7slLoohWi0bys2SoZc+RYEA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Jul 2025 06:59:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "2wgubpndq4"
+        },
+        {
+          "Name": "label",
+          "Value": "Players/Leander_dendoncker.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-/q8IJt4X8Z/otEFEu4nB7slLoohWi0bys2SoZc+RYEA="
+        }
+      ]
+    },
+    {
+      "Route": "Players/Leander_dendoncker.png",
+      "AssetFile": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\Leander_dendoncker.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "111290"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/q8IJt4X8Z/otEFEu4nB7slLoohWi0bys2SoZc+RYEA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Jul 2025 06:59:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-/q8IJt4X8Z/otEFEu4nB7slLoohWi0bys2SoZc+RYEA="
+        }
+      ]
+    },
+    {
+      "Route": "Players/leon_bailey.png",
+      "AssetFile": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\leon_bailey.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "117616"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"RH8mVDSVhGx1DtttVAAPMS6nZHfCYhpa6YMtAwHGxZE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Jul 2025 06:55:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-RH8mVDSVhGx1DtttVAAPMS6nZHfCYhpa6YMtAwHGxZE="
+        }
+      ]
+    },
+    {
+      "Route": "Players/leon_bailey.wpmpwcbnnb.png",
+      "AssetFile": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\leon_bailey.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "117616"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"RH8mVDSVhGx1DtttVAAPMS6nZHfCYhpa6YMtAwHGxZE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Jul 2025 06:55:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "wpmpwcbnnb"
+        },
+        {
+          "Name": "label",
+          "Value": "Players/leon_bailey.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-RH8mVDSVhGx1DtttVAAPMS6nZHfCYhpa6YMtAwHGxZE="
+        }
+      ]
+    },
+    {
+      "Route": "Players/lucas_digne.pe2lx6wf7r.png",
+      "AssetFile": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\lucas_digne.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "118012"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"j6d4MkibwxCHAzst6U9/eeIi63NdpRbTACymgH3qUM4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Jul 2025 06:43:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "pe2lx6wf7r"
+        },
+        {
+          "Name": "label",
+          "Value": "Players/lucas_digne.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-j6d4MkibwxCHAzst6U9/eeIi63NdpRbTACymgH3qUM4="
+        }
+      ]
+    },
+    {
+      "Route": "Players/lucas_digne.png",
+      "AssetFile": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\lucas_digne.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "118012"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"j6d4MkibwxCHAzst6U9/eeIi63NdpRbTACymgH3qUM4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Jul 2025 06:43:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-j6d4MkibwxCHAzst6U9/eeIi63NdpRbTACymgH3qUM4="
+        }
+      ]
+    },
+    {
       "Route": "Players/martin_qdegaard.cmnzyoxi61.png",
-      "AssetFile": "D:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\martin_qdegaard.png",
+      "AssetFile": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\martin_qdegaard.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1328,7 +3249,7 @@
     },
     {
       "Route": "Players/martin_qdegaard.png",
-      "AssetFile": "D:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\martin_qdegaard.png",
+      "AssetFile": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\martin_qdegaard.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1364,8 +3285,90 @@
       ]
     },
     {
+      "Route": "Players/matty_cash.png",
+      "AssetFile": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\matty_cash.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "114772"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"RDE8ycvGfz0n2JaXv9fLxiSy39ZuQezd2khtA2UgRU4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Jul 2025 06:41:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-RDE8ycvGfz0n2JaXv9fLxiSy39ZuQezd2khtA2UgRU4="
+        }
+      ]
+    },
+    {
+      "Route": "Players/matty_cash.syazvobe89.png",
+      "AssetFile": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\matty_cash.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "114772"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"RDE8ycvGfz0n2JaXv9fLxiSy39ZuQezd2khtA2UgRU4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Jul 2025 06:41:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "syazvobe89"
+        },
+        {
+          "Name": "label",
+          "Value": "Players/matty_cash.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-RDE8ycvGfz0n2JaXv9fLxiSy39ZuQezd2khtA2UgRU4="
+        }
+      ]
+    },
+    {
       "Route": "Players/neto.nk449h73q2.png",
-      "AssetFile": "D:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\neto.png",
+      "AssetFile": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\neto.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1410,7 +3413,7 @@
     },
     {
       "Route": "Players/neto.png",
-      "AssetFile": "D:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\neto.png",
+      "AssetFile": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\neto.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1447,7 +3450,7 @@
     },
     {
       "Route": "Players/oleksandr_zinchenko.dvzzx4226e.png",
-      "AssetFile": "D:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\oleksandr_zinchenko.png",
+      "AssetFile": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\oleksandr_zinchenko.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1492,7 +3495,7 @@
     },
     {
       "Route": "Players/oleksandr_zinchenko.png",
-      "AssetFile": "D:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\oleksandr_zinchenko.png",
+      "AssetFile": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\oleksandr_zinchenko.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1528,8 +3531,90 @@
       ]
     },
     {
+      "Route": "Players/pau_torres.nbl4c04vvc.png",
+      "AssetFile": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\pau_torres.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "112993"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"89BrItkhA15WDORB5+W/luPlY8rgwXNwq/Ma0brpr4Q=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Jul 2025 06:54:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "nbl4c04vvc"
+        },
+        {
+          "Name": "label",
+          "Value": "Players/pau_torres.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-89BrItkhA15WDORB5+W/luPlY8rgwXNwq/Ma0brpr4Q="
+        }
+      ]
+    },
+    {
+      "Route": "Players/pau_torres.png",
+      "AssetFile": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\pau_torres.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "112993"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"89BrItkhA15WDORB5+W/luPlY8rgwXNwq/Ma0brpr4Q=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Jul 2025 06:54:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-89BrItkhA15WDORB5+W/luPlY8rgwXNwq/Ma0brpr4Q="
+        }
+      ]
+    },
+    {
       "Route": "Players/ricardo_calafiori.f3v30lqnn1.png",
-      "AssetFile": "D:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\ricardo_calafiori.png",
+      "AssetFile": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\ricardo_calafiori.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1574,7 +3659,7 @@
     },
     {
       "Route": "Players/ricardo_calafiori.png",
-      "AssetFile": "D:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\ricardo_calafiori.png",
+      "AssetFile": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\ricardo_calafiori.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1610,8 +3695,90 @@
       ]
     },
     {
+      "Route": "Players/ross_barkley.phnhmyah5h.png",
+      "AssetFile": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\ross_barkley.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "115284"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0/AzPT04LkKfB/JhF30gmmemNjwLPCPtF/ZtEZzBO2Q=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Jul 2025 06:57:33 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "phnhmyah5h"
+        },
+        {
+          "Name": "label",
+          "Value": "Players/ross_barkley.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-0/AzPT04LkKfB/JhF30gmmemNjwLPCPtF/ZtEZzBO2Q="
+        }
+      ]
+    },
+    {
+      "Route": "Players/ross_barkley.png",
+      "AssetFile": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\ross_barkley.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "115284"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0/AzPT04LkKfB/JhF30gmmemNjwLPCPtF/ZtEZzBO2Q=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Jul 2025 06:57:33 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-0/AzPT04LkKfB/JhF30gmmemNjwLPCPtF/ZtEZzBO2Q="
+        }
+      ]
+    },
+    {
       "Route": "Players/takehiro_tomiyasu.m50adpq5m6.png",
-      "AssetFile": "D:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\takehiro_tomiyasu.png",
+      "AssetFile": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\takehiro_tomiyasu.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1656,7 +3823,7 @@
     },
     {
       "Route": "Players/takehiro_tomiyasu.png",
-      "AssetFile": "D:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\takehiro_tomiyasu.png",
+      "AssetFile": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\takehiro_tomiyasu.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1693,7 +3860,7 @@
     },
     {
       "Route": "Players/thomas_partey.22gz2mor7e.png",
-      "AssetFile": "D:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\thomas_partey.png",
+      "AssetFile": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\thomas_partey.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1738,7 +3905,7 @@
     },
     {
       "Route": "Players/thomas_partey.png",
-      "AssetFile": "D:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\thomas_partey.png",
+      "AssetFile": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\thomas_partey.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1774,8 +3941,90 @@
       ]
     },
     {
+      "Route": "Players/tyrone_mings.8ff7zhcvy8.png",
+      "AssetFile": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\tyrone_mings.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "117885"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1LDr92jN44p7d9QRpXa8oKZKjXTKz3N+13R5limtnzw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Jul 2025 06:48:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8ff7zhcvy8"
+        },
+        {
+          "Name": "label",
+          "Value": "Players/tyrone_mings.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-1LDr92jN44p7d9QRpXa8oKZKjXTKz3N+13R5limtnzw="
+        }
+      ]
+    },
+    {
+      "Route": "Players/tyrone_mings.png",
+      "AssetFile": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\tyrone_mings.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "117885"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1LDr92jN44p7d9QRpXa8oKZKjXTKz3N+13R5limtnzw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 21 Jul 2025 06:48:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-1LDr92jN44p7d9QRpXa8oKZKjXTKz3N+13R5limtnzw="
+        }
+      ]
+    },
+    {
       "Route": "Players/william_saliba.8qbqc5e60c.png",
-      "AssetFile": "D:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\william_saliba.png",
+      "AssetFile": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\william_saliba.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1820,7 +4069,7 @@
     },
     {
       "Route": "Players/william_saliba.png",
-      "AssetFile": "D:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\william_saliba.png",
+      "AssetFile": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\Players\\william_saliba.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1857,7 +4106,7 @@
     },
     {
       "Route": "TeamLogos/ars.om2zqvfqq0.png",
-      "AssetFile": "D:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\TeamLogos\\ars.png",
+      "AssetFile": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\TeamLogos\\ars.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1902,7 +4151,7 @@
     },
     {
       "Route": "TeamLogos/ars.png",
-      "AssetFile": "D:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\TeamLogos\\ars.png",
+      "AssetFile": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\TeamLogos\\ars.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1939,7 +4188,7 @@
     },
     {
       "Route": "TeamLogos/avl.m4orke3drs.png",
-      "AssetFile": "D:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\TeamLogos\\avl.png",
+      "AssetFile": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\TeamLogos\\avl.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1984,7 +4233,7 @@
     },
     {
       "Route": "TeamLogos/avl.png",
-      "AssetFile": "D:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\TeamLogos\\avl.png",
+      "AssetFile": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\TeamLogos\\avl.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2021,7 +4270,7 @@
     },
     {
       "Route": "TeamLogos/bhr.7h9qspq5fe.png",
-      "AssetFile": "D:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\TeamLogos\\bhr.png",
+      "AssetFile": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\TeamLogos\\bhr.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2066,7 +4315,7 @@
     },
     {
       "Route": "TeamLogos/bhr.png",
-      "AssetFile": "D:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\TeamLogos\\bhr.png",
+      "AssetFile": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\TeamLogos\\bhr.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2103,7 +4352,7 @@
     },
     {
       "Route": "TeamLogos/bou.7gvt54sksm.png",
-      "AssetFile": "D:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\TeamLogos\\bou.png",
+      "AssetFile": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\TeamLogos\\bou.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2148,7 +4397,7 @@
     },
     {
       "Route": "TeamLogos/bou.png",
-      "AssetFile": "D:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\TeamLogos\\bou.png",
+      "AssetFile": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\TeamLogos\\bou.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2185,7 +4434,7 @@
     },
     {
       "Route": "TeamLogos/bre.png",
-      "AssetFile": "D:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\TeamLogos\\bre.png",
+      "AssetFile": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\TeamLogos\\bre.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2222,7 +4471,7 @@
     },
     {
       "Route": "TeamLogos/bre.su12cwqgui.png",
-      "AssetFile": "D:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\TeamLogos\\bre.png",
+      "AssetFile": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\TeamLogos\\bre.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2266,8 +4515,306 @@
       ]
     },
     {
+      "Route": "TeamLogos/bunley.bxshmwomhh.svg",
+      "AssetFile": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\obj\\Debug\\net9.0\\compressed\\2s3rmknc42-bxshmwomhh.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000126198889"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7923"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"v+V/RI4iC38e+v1i5z4DPoyC5QqYE6A2akPjSWBI8I0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 23 Jul 2025 15:23:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"Uf0yhk0Tqs6Gtm1/icOQVMWW7mpS++7YWbihHiJELvw=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "bxshmwomhh"
+        },
+        {
+          "Name": "label",
+          "Value": "TeamLogos/bunley.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Uf0yhk0Tqs6Gtm1/icOQVMWW7mpS++7YWbihHiJELvw="
+        }
+      ]
+    },
+    {
+      "Route": "TeamLogos/bunley.bxshmwomhh.svg",
+      "AssetFile": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\TeamLogos\\bunley.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "24858"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Uf0yhk0Tqs6Gtm1/icOQVMWW7mpS++7YWbihHiJELvw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 23 Jul 2025 15:23:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "bxshmwomhh"
+        },
+        {
+          "Name": "label",
+          "Value": "TeamLogos/bunley.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Uf0yhk0Tqs6Gtm1/icOQVMWW7mpS++7YWbihHiJELvw="
+        }
+      ]
+    },
+    {
+      "Route": "TeamLogos/bunley.bxshmwomhh.svg.gz",
+      "AssetFile": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\obj\\Debug\\net9.0\\compressed\\2s3rmknc42-bxshmwomhh.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7923"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"v+V/RI4iC38e+v1i5z4DPoyC5QqYE6A2akPjSWBI8I0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 23 Jul 2025 15:23:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "bxshmwomhh"
+        },
+        {
+          "Name": "label",
+          "Value": "TeamLogos/bunley.svg.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-v+V/RI4iC38e+v1i5z4DPoyC5QqYE6A2akPjSWBI8I0="
+        }
+      ]
+    },
+    {
+      "Route": "TeamLogos/bunley.svg",
+      "AssetFile": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\obj\\Debug\\net9.0\\compressed\\2s3rmknc42-bxshmwomhh.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000126198889"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7923"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"v+V/RI4iC38e+v1i5z4DPoyC5QqYE6A2akPjSWBI8I0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 23 Jul 2025 15:23:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"Uf0yhk0Tqs6Gtm1/icOQVMWW7mpS++7YWbihHiJELvw=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Uf0yhk0Tqs6Gtm1/icOQVMWW7mpS++7YWbihHiJELvw="
+        }
+      ]
+    },
+    {
+      "Route": "TeamLogos/bunley.svg",
+      "AssetFile": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\TeamLogos\\bunley.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "24858"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Uf0yhk0Tqs6Gtm1/icOQVMWW7mpS++7YWbihHiJELvw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 23 Jul 2025 15:23:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Uf0yhk0Tqs6Gtm1/icOQVMWW7mpS++7YWbihHiJELvw="
+        }
+      ]
+    },
+    {
+      "Route": "TeamLogos/bunley.svg.gz",
+      "AssetFile": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\obj\\Debug\\net9.0\\compressed\\2s3rmknc42-bxshmwomhh.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7923"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"v+V/RI4iC38e+v1i5z4DPoyC5QqYE6A2akPjSWBI8I0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 23 Jul 2025 15:23:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-v+V/RI4iC38e+v1i5z4DPoyC5QqYE6A2akPjSWBI8I0="
+        }
+      ]
+    },
+    {
       "Route": "TeamLogos/che.png",
-      "AssetFile": "D:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\TeamLogos\\che.png",
+      "AssetFile": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\TeamLogos\\che.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2304,7 +4851,7 @@
     },
     {
       "Route": "TeamLogos/che.t3ow6vx8s6.png",
-      "AssetFile": "D:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\TeamLogos\\che.png",
+      "AssetFile": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\TeamLogos\\che.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2349,7 +4896,7 @@
     },
     {
       "Route": "TeamLogos/cry.png",
-      "AssetFile": "D:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\TeamLogos\\cry.png",
+      "AssetFile": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\TeamLogos\\cry.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2386,7 +4933,7 @@
     },
     {
       "Route": "TeamLogos/cry.t0rg6zp2fp.png",
-      "AssetFile": "D:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\TeamLogos\\cry.png",
+      "AssetFile": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\TeamLogos\\cry.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2431,7 +4978,7 @@
     },
     {
       "Route": "TeamLogos/eve.l7ln0rwgdv.png",
-      "AssetFile": "D:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\TeamLogos\\eve.png",
+      "AssetFile": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\TeamLogos\\eve.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2476,7 +5023,7 @@
     },
     {
       "Route": "TeamLogos/eve.png",
-      "AssetFile": "D:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\TeamLogos\\eve.png",
+      "AssetFile": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\TeamLogos\\eve.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2513,7 +5060,7 @@
     },
     {
       "Route": "TeamLogos/ful.png",
-      "AssetFile": "D:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\TeamLogos\\ful.png",
+      "AssetFile": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\TeamLogos\\ful.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2550,7 +5097,7 @@
     },
     {
       "Route": "TeamLogos/ful.yt6lotlefq.png",
-      "AssetFile": "D:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\TeamLogos\\ful.png",
+      "AssetFile": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\TeamLogos\\ful.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2590,6 +5137,580 @@
         {
           "Name": "integrity",
           "Value": "sha256-Km4KbrKZH8f9WTjjv8y440f9PXdyVOo9MVlMGXAv0Qc="
+        }
+      ]
+    },
+    {
+      "Route": "TeamLogos/ips.ls3va14cof.png",
+      "AssetFile": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\TeamLogos\\ips.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "10646"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9VK8Tq2I95RWXuUHzumYXHjBwm84YRH4RPaKTiRx5nE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 16 Jul 2025 04:27:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ls3va14cof"
+        },
+        {
+          "Name": "label",
+          "Value": "TeamLogos/ips.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-9VK8Tq2I95RWXuUHzumYXHjBwm84YRH4RPaKTiRx5nE="
+        }
+      ]
+    },
+    {
+      "Route": "TeamLogos/ips.png",
+      "AssetFile": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\TeamLogos\\ips.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "10646"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9VK8Tq2I95RWXuUHzumYXHjBwm84YRH4RPaKTiRx5nE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 16 Jul 2025 04:27:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-9VK8Tq2I95RWXuUHzumYXHjBwm84YRH4RPaKTiRx5nE="
+        }
+      ]
+    },
+    {
+      "Route": "TeamLogos/lei.png",
+      "AssetFile": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\TeamLogos\\lei.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "22365"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"QpRWTXtfjmBZ7TsknDHfF1P/spnkfbsvxDsP6yDCg6g=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 17 Jul 2025 02:29:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-QpRWTXtfjmBZ7TsknDHfF1P/spnkfbsvxDsP6yDCg6g="
+        }
+      ]
+    },
+    {
+      "Route": "TeamLogos/lei.y459qeg7wn.png",
+      "AssetFile": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\TeamLogos\\lei.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "22365"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"QpRWTXtfjmBZ7TsknDHfF1P/spnkfbsvxDsP6yDCg6g=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 17 Jul 2025 02:29:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "y459qeg7wn"
+        },
+        {
+          "Name": "label",
+          "Value": "TeamLogos/lei.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-QpRWTXtfjmBZ7TsknDHfF1P/spnkfbsvxDsP6yDCg6g="
+        }
+      ]
+    },
+    {
+      "Route": "TeamLogos/liv.iq0h1jha0f.png",
+      "AssetFile": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\TeamLogos\\liv.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6938"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BoU1fBYN+a/YLWVMeQfPtG7y40W5wWi/UbUUN2gO35Q=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 17 Jul 2025 02:34:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "iq0h1jha0f"
+        },
+        {
+          "Name": "label",
+          "Value": "TeamLogos/liv.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-BoU1fBYN+a/YLWVMeQfPtG7y40W5wWi/UbUUN2gO35Q="
+        }
+      ]
+    },
+    {
+      "Route": "TeamLogos/liv.png",
+      "AssetFile": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\TeamLogos\\liv.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6938"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BoU1fBYN+a/YLWVMeQfPtG7y40W5wWi/UbUUN2gO35Q=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 17 Jul 2025 02:34:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-BoU1fBYN+a/YLWVMeQfPtG7y40W5wWi/UbUUN2gO35Q="
+        }
+      ]
+    },
+    {
+      "Route": "TeamLogos/mci.nbhh198017.png",
+      "AssetFile": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\TeamLogos\\mci.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "18648"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"81Z7ku1KtAAv8JRBQEDknGs8gmxD40lvTavfgC71LMs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 17 Jul 2025 02:42:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "nbhh198017"
+        },
+        {
+          "Name": "label",
+          "Value": "TeamLogos/mci.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-81Z7ku1KtAAv8JRBQEDknGs8gmxD40lvTavfgC71LMs="
+        }
+      ]
+    },
+    {
+      "Route": "TeamLogos/mci.png",
+      "AssetFile": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\TeamLogos\\mci.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "18648"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"81Z7ku1KtAAv8JRBQEDknGs8gmxD40lvTavfgC71LMs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 17 Jul 2025 02:42:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-81Z7ku1KtAAv8JRBQEDknGs8gmxD40lvTavfgC71LMs="
+        }
+      ]
+    },
+    {
+      "Route": "TeamLogos/mun.png",
+      "AssetFile": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\TeamLogos\\mun.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "17186"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"U1RkBsEjTvlVqnE9Kw68mv3tkQCppVoXVOxKss8hvjw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 18 Jul 2025 13:03:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-U1RkBsEjTvlVqnE9Kw68mv3tkQCppVoXVOxKss8hvjw="
+        }
+      ]
+    },
+    {
+      "Route": "TeamLogos/mun.vx9028wvgk.png",
+      "AssetFile": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\TeamLogos\\mun.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "17186"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"U1RkBsEjTvlVqnE9Kw68mv3tkQCppVoXVOxKss8hvjw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 18 Jul 2025 13:03:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vx9028wvgk"
+        },
+        {
+          "Name": "label",
+          "Value": "TeamLogos/mun.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-U1RkBsEjTvlVqnE9Kw68mv3tkQCppVoXVOxKss8hvjw="
+        }
+      ]
+    },
+    {
+      "Route": "TeamLogos/new.png",
+      "AssetFile": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\TeamLogos\\new.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "18765"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"g+nD1McAwFzNdLg2FEIm41Df9jgRCevVLQ1hHqxWpNQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 19 Jul 2025 06:13:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-g+nD1McAwFzNdLg2FEIm41Df9jgRCevVLQ1hHqxWpNQ="
+        }
+      ]
+    },
+    {
+      "Route": "TeamLogos/new.x3v4knl8lw.png",
+      "AssetFile": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\TeamLogos\\new.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "18765"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"g+nD1McAwFzNdLg2FEIm41Df9jgRCevVLQ1hHqxWpNQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 19 Jul 2025 06:13:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "x3v4knl8lw"
+        },
+        {
+          "Name": "label",
+          "Value": "TeamLogos/new.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-g+nD1McAwFzNdLg2FEIm41Df9jgRCevVLQ1hHqxWpNQ="
+        }
+      ]
+    },
+    {
+      "Route": "TeamLogos/sou.ljf1m8k5jf.png",
+      "AssetFile": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\TeamLogos\\sou.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "16241"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"D4WCNdJAxm+ti1ueeRNJ328QZ6w+mckr5wBFOsZXcdI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 17 Jul 2025 02:36:25 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ljf1m8k5jf"
+        },
+        {
+          "Name": "label",
+          "Value": "TeamLogos/sou.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-D4WCNdJAxm+ti1ueeRNJ328QZ6w+mckr5wBFOsZXcdI="
+        }
+      ]
+    },
+    {
+      "Route": "TeamLogos/sou.png",
+      "AssetFile": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\TeamLogos\\sou.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "16241"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"D4WCNdJAxm+ti1ueeRNJ328QZ6w+mckr5wBFOsZXcdI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 17 Jul 2025 02:36:25 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-D4WCNdJAxm+ti1ueeRNJ328QZ6w+mckr5wBFOsZXcdI="
         }
       ]
     }

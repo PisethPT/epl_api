@@ -10,6 +10,9 @@ public class Player
     public string? Photo { get; set; }
     public required string Position { get; set; }
     public int PlayerNumber { get; set; }
+    public required string SocialMedia { get; set; }
+    public required string Nationality { get; set; }
+    public required string PreferredFoot { get; set; }
     public int TeamId { get; set; }
 
     [JsonIgnore]

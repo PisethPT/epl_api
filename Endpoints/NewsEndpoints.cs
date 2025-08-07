@@ -19,16 +19,19 @@ public static class NewsEndpoints
             {
                 statusCode = 200,
                 message = "News fetched successfully",
-                data = new
+                content = new
                 {
                     news = news.Select(n => new
                     {
                         n.Id,
                         n.Title,
+                        n.SubTitle,
                         n.Body,
                         n.PublishedDate,
                         n.Image,
                         n.VideoLink,
+                        n.ExpireDate,
+                        n.IsActive,
                         User = new
                         {
                             n.User!.Id,
@@ -56,12 +59,15 @@ public static class NewsEndpoints
             {
                 statusCode = 200,
                 message = "News fetched successfully.",
-                data = new
+                content = new
                 {
                     existingNews.Id,
                     existingNews.Title,
+                    existingNews.SubTitle,
                     existingNews.Body,
                     existingNews.PublishedDate,
+                    existingNews.ExpireDate,
+                    existingNews.IsActive,
                     existingNews.Image,
                     existingNews.VideoLink,
                     User = new
@@ -96,13 +102,18 @@ public static class NewsEndpoints
             if (model.Image is not null)
                 fileName = (await fileService.UploadFile(model.Image, directory)).Item1;
 
-            model.UserId = httpContext.Session.GetString("UserId")!;
+            var userId = httpContext.Session.GetString("UserId")!;
+            if (!string.IsNullOrEmpty(userId))
+                model.UserId = userId;
 
             var news = new News
             {
                 Title = model.Title,
                 Body = model.Body,
+                SubTitle = model.SubTitle,
                 PublishedDate = model.PublishedDate,
+                ExpireDate = model.ExpireDate,
+                IsActive = model.IsActive,
                 Image = fileName,
                 VideoLink = model.VideoLink,
                 UserId = model.UserId,
@@ -113,7 +124,7 @@ public static class NewsEndpoints
             {
                 statusCode = 201,
                 message = "News created successfully.",
-                data = news
+                content = news
             });
         }).DisableAntiforgery()
         .RequireAuthorization("OnlyAdmin");
@@ -135,7 +146,11 @@ public static class NewsEndpoints
                     message = "News not found."
                 });
 
-            if (existingNews.UserId != httpContext.Session.GetString("UserId"))
+            var userId = httpContext.Session.GetString("UserId");
+            if (!string.IsNullOrEmpty(userId))
+                model.UserId = userId;
+
+            if (existingNews.UserId != model.UserId)
                 return Results.Forbid();
 
             var duplicateNews = await context.News
@@ -155,22 +170,28 @@ public static class NewsEndpoints
 
             existingNews.Title = model.Title;
             existingNews.Body = model.Body;
+            existingNews.SubTitle = model.SubTitle;
             existingNews.PublishedDate = model.PublishedDate;
+            existingNews.ExpireDate = model.ExpireDate;
+            existingNews.IsActive = model.IsActive;
             existingNews.Image = fileName;
             existingNews.VideoLink = string.IsNullOrEmpty(model.VideoLink) ? existingNews.VideoLink : model.VideoLink;
-            existingNews.UserId = httpContext.Session.GetString("UserId")!;
+            existingNews.UserId = model.UserId!;
             context.News.Update(existingNews);
             await context.SaveChangesAsync();
             return Results.Ok(new
             {
                 statusCode = 200,
                 message = "News updated successfully.",
-                data = new
+                content = new
                 {
                     existingNews.Id,
                     existingNews.Title,
+                    existingNews.SubTitle,
                     existingNews.Body,
                     existingNews.PublishedDate,
+                    existingNews.ExpireDate,
+                    existingNews.IsActive,
                     existingNews.Image,
                     existingNews.VideoLink,
                     User = new
@@ -179,6 +200,7 @@ public static class NewsEndpoints
                         existingNews.User.FirstName,
                         existingNews.User.LastName,
                         existingNews.User.Email,
+
                         Gender = existingNews.User.Gender == 0 ? "Male" : "Female"
                     }
                 }
@@ -186,7 +208,7 @@ public static class NewsEndpoints
         }).DisableAntiforgery()
         .RequireAuthorization("OnlyAdmin");
 
-        app.MapDelete("/news/delete/{id:int}", async (EPLContext context, int id) =>
+        app.MapDelete("/news/delete/{id:int}", async (EPLContext context, int id, HttpContext httpContext) =>
         {
             var existingNews = await context.News.Include(user => user.User).FirstOrDefaultAsync(n => n.Id == id);
             if (existingNews is null)
@@ -195,6 +217,10 @@ public static class NewsEndpoints
                     statusCode = 404,
                     message = "News not found."
                 });
+            // var userId = httpContext.Session.GetString("UserId");
+            // if (!string.IsNullOrEmpty(userId))
+            //     existingNews.UserId = userId;
+
             context.News.Remove(existingNews);
             await context.SaveChangesAsync();
             return Results.Ok(new
@@ -227,17 +253,20 @@ public static class NewsEndpoints
                     statusCode = 404,
                     message = "No news articles found matching the search query."
                 });
-                
+
             return Results.Ok(new
             {
                 statusCode = 200,
                 message = "News articles fetched successfully.",
-                data = news.Select(n => new
+                content = news.Select(n => new
                 {
                     n.Id,
                     n.Title,
+                    n.SubTitle,
                     n.Body,
                     n.PublishedDate,
+                    n.ExpireDate,
+                    n.IsActive,
                     n.Image,
                     n.VideoLink,
                     User = new
