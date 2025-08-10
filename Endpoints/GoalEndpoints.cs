@@ -10,31 +10,22 @@ public static class GoalEndpoints
 {
     public static void MapGoals(this WebApplication app)
     {
+        MapGetGoalsEndpoint(app);
+        MapGetGoalByIdEndpoint(app);
+        MapCreateGoalEndpoint(app);
+        MapEditGoalEndpoint(app);
+        MapDeleteGoalEndpoint(app);
+    }
+
+    private static void MapGetGoalsEndpoint(WebApplication app)
+    {
         app.MapGet("/goals", async (EPLContext context, string? query) =>
         {
-            var goalsQuery = context.Goals.Include(goal => goal.Match)
-                                                .ThenInclude(match => match!.HomeTeam)
-                                            .Include(goal => goal.Match)
-                                                .ThenInclude(match => match!.AwayTeam)
-                                            .Include(goal => goal.Player)
-                                            .Include(goal => goal.Team)
-                                            .OrderByDescending(goal => goal.Id)
-                                            .AsQueryable();
+            var goalsQuery = GetGoalsBaseQuery(context);
 
-            if (!string.IsNullOrWhiteSpace(query))
-            {
-                var lowerQuery = query.ToLower();
-                goalsQuery = goalsQuery.Where(goal =>
-                    (goal.Player != null && (goal.Player.FirstName.ToLower().Contains(lowerQuery) || goal.Player.LastName.ToLower().Contains(lowerQuery))) ||
-                    (goal.Team != null && goal.Team.Name.ToLower().Contains(lowerQuery)) ||
-                    (goal.Match != null && (
-                        (goal.Match.HomeTeam != null && goal.Match.HomeTeam.Name.ToLower().Contains(lowerQuery)) ||
-                        (goal.Match.AwayTeam != null && goal.Match.AwayTeam.Name.ToLower().Contains(lowerQuery))
-                    ))
-                );
-            }
+            goalsQuery = ApplyGoalFilter(goalsQuery, query);
 
-            var goals = await goalsQuery.OrderByDescending(goad => goad.Id).ToListAsync();
+            var goals = await goalsQuery.OrderByDescending(goal => goal.Id).ToListAsync();
 
             if (goals.Any(goal => goal.Match == null))
             {
@@ -50,42 +41,14 @@ public static class GoalEndpoints
                 statusCode = 200,
                 message = "Goals retrieved successfully",
                 length = goals.Count,
-                content = goals.Select(goal => new
-                {
-                    goal.Id,
-                    goal.minutes,
-                    goal.MatchId,
-                    Match = goal.Match == null ? null : new
-                    {
-                        goal.Match!.Id,
-                        goal.Match.HomeTeamId,
-                        goal.Match.AwayTeamId,
-                        goal.Match.MatchDate,
-                        goal.Match.MatchTime,
-                        HomeTeamName = goal.Match.HomeTeam?.Name ?? "",
-                        AwayTeamName = goal.Match.AwayTeam?.Name ?? "",
-                        HomeTeamClubCrest = goal.Match.HomeTeam?.ClubCrest ?? "",
-                        AwayTeamClubCrest = goal.Match.AwayTeam?.ClubCrest ?? "",
-                    },
-                    Player = goal.Player == null ? null : new
-                    {
-                        goal.Player!.Id,
-                        goal.Player.FirstName,
-                        goal.Player.LastName,
-                        goal.Player.Position,
-                        goal.Player.PlayerNumber,
-                        goal.Player.Photo,
-                    },
-                    Team = goal.Team == null ? null : new
-                    {
-                        goal.Team!.Id,
-                        goal.Team.Name,
-                        goal.Team.ClubCrest
-                    }
-                })
+                content = goals.Select(ProjectGoalToDto)
             });
         }).RequireAuthorization();
+    }
 
+
+    private static void MapGetGoalByIdEndpoint(WebApplication app)
+    {
         app.MapGet("/goals/{id:int}", async (EPLContext context, int id) =>
         {
             var goal = await context.Goals.Include(g => g.Match)
@@ -103,43 +66,14 @@ public static class GoalEndpoints
             {
                 statusCode = 200,
                 message = "Goal retrieved successfully",
-                content = new
-                {
-                    goal.Id,
-                    goal.minutes,
-                    goal.MatchId,
-                    Match = goal.Match == null ? null : new
-                    {
-                        goal.Match!.Id,
-                        goal.Match.HomeTeamId,
-                        goal.Match.AwayTeamId,
-                        goal.Match.MatchDate,
-                        goal.Match.MatchTime,
-                        HomeTeamName = goal.Match.HomeTeam?.Name ?? "",
-                        AwayTeamName = goal.Match.AwayTeam?.Name ?? "",
-                        HomeTeamClubCrest = goal.Match.HomeTeam?.ClubCrest ?? "",
-                        AwayTeamClubCrest = goal.Match.AwayTeam?.ClubCrest ?? "",
-                    },
-                    Player = goal.Player == null ? null : new
-                    {
-                        goal.Player!.Id,
-                        goal.Player.FirstName,
-                        goal.Player.LastName,
-                        goal.Player.Position,
-                        goal.Player.PlayerNumber,
-                        goal.Player.Photo,
-                    },
-                    Team = goal.Team == null ? null : new
-                    {
-                        goal.Team!.Id,
-                        goal.Team.Name,
-                        goal.Team.ClubCrest
-                    }
-                }
+                content = ProjectGoalToDto(goal)
             });
         }).RequireAuthorization();
+    }
 
-        app.MapPost("/goals/create", async (EPLContext context, [FromForm] GoalDto model) =>
+    private static void MapCreateGoalEndpoint(WebApplication app)
+    {
+        _ = app.MapPost("/goals/create", async (EPLContext context, [FromForm] GoalDto model) =>
         {
             if (model is null)
             {
@@ -151,10 +85,11 @@ public static class GoalEndpoints
                 return Results.BadRequest(new { statusCode = 400, message = "Invalid goal data" });
             }
 
+            const double epsilon = 0.0001;
             var existingGoal = await context.Goals.FirstOrDefaultAsync(g => g.MatchId == model.MatchId &&
                                                                             g.PlayerId == model.PlayerId &&
                                                                             g.TeamId == model.TeamId &&
-                                                                            g.minutes == model.Minutes);
+                                                                            Math.Abs(g.minutes - model.Minutes) < epsilon);
             if (existingGoal != null)
             {
                 return Results.BadRequest(new
@@ -183,7 +118,10 @@ public static class GoalEndpoints
             });
         }).DisableAntiforgery()
         .RequireAuthorization("OnlyAdmin");
+    }
 
+    private static void MapEditGoalEndpoint(WebApplication app)
+    {
         app.MapPut("/goals/edit/{id:int}", async (EPLContext context, [FromForm] GoalDto model, int id) =>
         {
             var goal = await context.Goals.FindAsync(id);
@@ -208,7 +146,10 @@ public static class GoalEndpoints
             });
         }).DisableAntiforgery()
         .RequireAuthorization("OnlyAdmin");
+    }
 
+    private static void MapDeleteGoalEndpoint(WebApplication app)
+    {
         app.MapDelete("/goals/delete/{id:int}", async (EPLContext context, int id) =>
         {
             var goal = await context.Goals.FindAsync(id);
@@ -226,5 +167,73 @@ public static class GoalEndpoints
                 message = "Goal deleted successfully"
             });
         }).RequireAuthorization("OnlyAdmin");
+    }
+
+    // filtering and temporary methods
+    private static IQueryable<Goal> GetGoalsBaseQuery(EPLContext context)
+    {
+        return context.Goals.Include(goal => goal.Match)
+                                .ThenInclude(match => match!.HomeTeam)
+                            .Include(goal => goal.Match)
+                                .ThenInclude(match => match!.AwayTeam)
+                            .Include(goal => goal.Player)
+                            .Include(goal => goal.Team)
+                            .OrderByDescending(goal => goal.Id)
+                            .AsQueryable();
+    }
+
+    private static IQueryable<Goal> ApplyGoalFilter(IQueryable<Goal> goalsQuery, string? query)
+    {
+        if (string.IsNullOrWhiteSpace(query))
+            return goalsQuery;
+
+        var lowerQuery = query.ToLower();
+        return goalsQuery.Where(goal =>
+            (goal.Player != null && (goal.Player.FirstName.ToLower().Contains(lowerQuery) || goal.Player.LastName.ToLower().Contains(lowerQuery))) ||
+            (goal.Team != null && goal.Team.Name.ToLower().Contains(lowerQuery)) ||
+            (goal.Match != null && (
+                (goal.Match.HomeTeam != null && goal.Match.HomeTeam.Name.ToLower().Contains(lowerQuery)) ||
+                (goal.Match.AwayTeam != null && goal.Match.AwayTeam.Name.ToLower().Contains(lowerQuery))
+            ))
+        );
+    }
+
+    private static object ProjectGoalToDto(Goal goal)
+    {
+        return new
+        {
+            goal.Id,
+            goal.minutes,
+            goal.MatchId,
+            Match = goal.Match == null ? null : new
+            {
+                goal.Match!.Id,
+                goal.Match.HomeTeamId,
+                goal.Match.AwayTeamId,
+                goal.Match.MatchDate,
+                goal.Match.MatchTime,
+                HomeTeamName = goal.Match.HomeTeam?.Name ?? "",
+                AwayTeamName = goal.Match.AwayTeam?.Name ?? "",
+                HomeTeamScore = goal.Match.HomeTeamScore,
+                AwayTeamScore = goal.Match.AwayTeamScore,
+                HomeTeamClubCrest = goal.Match.HomeTeam?.ClubCrest ?? "",
+                AwayTeamClubCrest = goal.Match.AwayTeam?.ClubCrest ?? "",
+            },
+            Player = goal.Player == null ? null : new
+            {
+                goal.Player!.Id,
+                goal.Player.FirstName,
+                goal.Player.LastName,
+                goal.Player.Position,
+                goal.Player.PlayerNumber,
+                goal.Player.Photo,
+            },
+            Team = goal.Team == null ? null : new
+            {
+                goal.Team!.Id,
+                goal.Team.Name,
+                goal.Team.ClubCrest
+            }
+        };
     }
 }

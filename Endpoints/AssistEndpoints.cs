@@ -10,31 +10,69 @@ public static class AssistEndpoints
 {
     public static void MapAssists(this WebApplication app)
     {
+        MapGetAssists(app);
+        MapCreateAssist(app);
+        MapGetAssistById(app);
+        MapEditAssist(app);
+        MapDeleteAssist(app);
+    }
+
+    private static void MapGetAssists(WebApplication app)
+    {
         app.MapGet("/assists", async (EPLContext context, string? query) =>
         {
-            var assists = await context.Assists.Include(match => match.Match)
+            var assists = await context.Assists.Include(assist => assist.Match)
+                                                    .ThenInclude(match => match!.HomeTeam)
+                                                .Include(assist => assist.Match)
+                                                    .ThenInclude(match => match!.AwayTeam)
                                                .Include(player => player.Player)
                                                .Include(team => team.Team).ToListAsync();
             return Results.Ok(new
             {
                 statusCode = 200,
                 message = "Assists retrieved successfully",
-                data = assists.Select(assist => new
+                content = assists.Select(assist => new
                 {
                     assist.Id,
-                    assist.MatchId,
-                    assist.PlayerId,
-                    assist.TeamId,
                     assist.Minutes,
-                    assist.Match!.MatchDate,
-                    PlayerName = string.Concat(assist.Player!.FirstName, " ", assist.Player.LastName),
-                    assist.Player.PlayerNumber,
-                    assist.Team!.Name,
-                    assist.Team.ClubCrest
+                    assist.MatchId,
+                    Match = assist.Match == null ? null : new
+                    {
+                        assist.Match!.Id,
+                        assist.Match.HomeTeamId,
+                        assist.Match.AwayTeamId,
+                        assist.Match.MatchDate,
+                        assist.Match.MatchTime,
+                        HomeTeamName = assist.Match.HomeTeam?.Name ?? "",
+                        AwayTeamName = assist.Match.AwayTeam?.Name ?? "",
+                        HomeTeamScore = assist.Match.HomeTeamScore,
+                        AwayTeamScore = assist.Match.AwayTeamScore,
+                        HomeTeamClubCrest = assist.Match.HomeTeam?.ClubCrest ?? "",
+                        AwayTeamClubCrest = assist.Match.AwayTeam?.ClubCrest ?? "",
+                    },
+                    Player = assist.Player == null ? null : new
+                    {
+                        assist.Player!.Id,
+                        assist.Player.FirstName,
+                        assist.Player.LastName,
+                        assist.Player.Position,
+                        assist.Player.PlayerNumber,
+                        assist.Player.Photo,
+                        assist.Player.PreferredFoot,
+                    },
+                    Team = assist.Team == null ? null : new
+                    {
+                        assist.Team!.Id,
+                        assist.Team.Name,
+                        assist.Team.ClubCrest
+                    }
                 })
             });
-        });
+        }).RequireAuthorization();
+    }
 
+    private static void MapCreateAssist(WebApplication app)
+    {
         app.MapPost("/assists/create", async (EPLContext context, [FromForm] AssistDto model) =>
         {
             if (model is null)
@@ -67,7 +105,10 @@ public static class AssistEndpoints
             });
         }).DisableAntiforgery()
         .RequireAuthorization("OnlyAdmin");
+    }
 
+    private static void MapGetAssistById(WebApplication app)
+    {
         app.MapGet("/assists/{id:int}", async (EPLContext context, int id) =>
         {
             var assist = await context.Assists.Include(match => match.Match)
@@ -99,7 +140,10 @@ public static class AssistEndpoints
                 }
             });
         }).RequireAuthorization();
+    }
 
+    private static void MapEditAssist(WebApplication app)
+    {
         app.MapPut("/assists/edit/{id:int}", async (EPLContext context, int id, [FromForm] AssistDto model) =>
         {
             if (model is null)
@@ -140,7 +184,10 @@ public static class AssistEndpoints
             });
         }).DisableAntiforgery()
         .RequireAuthorization("OnlyAdmin");
+    }
 
+    private static void MapDeleteAssist(WebApplication app)
+    {
         app.MapDelete("/assists/delete/{id:int}", async (EPLContext context, int id) =>
         {
             var assist = await context.Assists.FindAsync(id);
@@ -157,6 +204,6 @@ public static class AssistEndpoints
                 statusCode = 200,
                 message = "Assist deleted successfully"
             });
-        }).RequireAuthorization("AdminOnly");
+        }).RequireAuthorization("OnlyAdmin");
     }
 }
