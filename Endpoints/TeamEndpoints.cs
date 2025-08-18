@@ -54,6 +54,7 @@ public static class TeamEndpoints
                 HomeStadium = model.HomeStadium,
                 HeadCoach = model.HeadCoach,
                 ClubCrest = fileName,
+                TeamThemeColor = model.TeamThemeColor,
                 WebsiteUrl = model.WebsiteUrl ?? string.Empty
             };
             context.Teams.Add(team);
