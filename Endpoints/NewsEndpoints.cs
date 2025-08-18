@@ -45,6 +45,39 @@ public static class NewsEndpoints
             });
         });
 
+        app.MapGet("/news/daily", async (EPLContext context) =>
+        {
+            var news = await context.News.OrderByDescending(news => news.Id).Include(user => user.User).Where(n => n.IsActive == true).ToListAsync();
+            return Results.Ok(new
+            {
+                statusCode = 200,
+                message = "News fetched successfully",
+                content = new
+                {
+                    news = news.Select(n => new
+                    {
+                        n.Id,
+                        n.Title,
+                        n.SubTitle,
+                        n.Body,
+                        n.PublishedDate,
+                        n.Image,
+                        n.VideoLink,
+                        n.ExpireDate,
+                        n.IsActive,
+                        User = new
+                        {
+                            n.User!.Id,
+                            n.User.FirstName,
+                            n.User.LastName,
+                            n.User.Email,
+                            Gender = n.User.Gender == 0 ? "Male" : "Female"
+                        }
+                    })
+                }
+            });
+        });
+
         app.MapGet("/news/{id:int}", async (EPLContext context, int id) =>
         {
             var existingNews = await context.News.Include(user => user.User).FirstOrDefaultAsync(n => n.Id == id);

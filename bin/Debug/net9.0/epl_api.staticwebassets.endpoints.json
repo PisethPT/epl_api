@@ -331,6 +331,88 @@
       ]
     },
     {
+      "Route": "News/PL2425-TALKING-TACTICS-SESKO-GYOKERES.iuhqdw89f5.webp",
+      "AssetFile": "News/PL2425-TALKING-TACTICS-SESKO-GYOKERES.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "117998"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2klgHDG+07htDJT1FUD1gRmt54ulx5yaaBXNYGr8yJk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 17 Aug 2025 11:10:23 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "iuhqdw89f5"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-2klgHDG+07htDJT1FUD1gRmt54ulx5yaaBXNYGr8yJk="
+        },
+        {
+          "Name": "label",
+          "Value": "News/PL2425-TALKING-TACTICS-SESKO-GYOKERES.webp"
+        }
+      ]
+    },
+    {
+      "Route": "News/PL2425-TALKING-TACTICS-SESKO-GYOKERES.webp",
+      "AssetFile": "News/PL2425-TALKING-TACTICS-SESKO-GYOKERES.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "117998"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2klgHDG+07htDJT1FUD1gRmt54ulx5yaaBXNYGr8yJk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 17 Aug 2025 11:10:23 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-2klgHDG+07htDJT1FUD1gRmt54ulx5yaaBXNYGr8yJk="
+        }
+      ]
+    },
+    {
       "Route": "News/Placeholder-lead.iggltp3kzd.webp",
       "AssetFile": "News/Placeholder-lead.webp",
       "Selectors": [],

@@ -48,6 +48,18 @@
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-GHSSDlc4/ohj1leQJN0fU67t6AKlHshQ1mtXlAe4J00="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"124006"},{"Name":"Content-Type","Value":"image/webp"},{"Name":"ETag","Value":"\u0022GHSSDlc4/ohj1leQJN0fU67t6AKlHshQ1mtXlAe4J00=\u0022"},{"Name":"Last-Modified","Value":"Mon, 28 Jul 2025 22:11:17 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/epl_api/News/PL2425-TALKING-TACTICS-SESKO-GYOKERES.iuhqdw89f5.webp">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\News\PL2425-TALKING-TACTICS-SESKO-GYOKERES.webp'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"iuhqdw89f5"},{"Name":"integrity","Value":"sha256-2klgHDG\u002B07htDJT1FUD1gRmt54ulx5yaaBXNYGr8yJk="},{"Name":"label","Value":"_content/epl_api/News/PL2425-TALKING-TACTICS-SESKO-GYOKERES.webp"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"117998"},{"Name":"Content-Type","Value":"image/webp"},{"Name":"ETag","Value":"\u00222klgHDG\u002B07htDJT1FUD1gRmt54ulx5yaaBXNYGr8yJk=\u0022"},{"Name":"Last-Modified","Value":"Sun, 17 Aug 2025 11:10:23 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/epl_api/News/PL2425-TALKING-TACTICS-SESKO-GYOKERES.webp">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\News\PL2425-TALKING-TACTICS-SESKO-GYOKERES.webp'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-2klgHDG\u002B07htDJT1FUD1gRmt54ulx5yaaBXNYGr8yJk="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"117998"},{"Name":"Content-Type","Value":"image/webp"},{"Name":"ETag","Value":"\u00222klgHDG\u002B07htDJT1FUD1gRmt54ulx5yaaBXNYGr8yJk=\u0022"},{"Name":"Last-Modified","Value":"Sun, 17 Aug 2025 11:10:23 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/epl_api/News/Placeholder-lead.iggltp3kzd.webp">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\News\Placeholder-lead.webp'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>

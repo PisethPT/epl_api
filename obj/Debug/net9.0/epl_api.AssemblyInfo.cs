@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("epl_api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5fa40b2cd96fc80593e61ee1e39484ed33f54089")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+624bac740774a251cc7170143f1eaf80f6f13c16")]
 [assembly: System.Reflection.AssemblyProductAttribute("epl_api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("epl_api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

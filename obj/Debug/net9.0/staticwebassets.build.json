@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "I6vHX4ohnLKPpS7cRkfKAO8uPp1AvRXpM0ih3SQPJz4=",
+  "Hash": "v8jvabxz40T8Vf1Mes8wY+1Zz+LT0PcGcYXWq2olmqU=",
   "Source": "epl_api",
   "BasePath": "_content/epl_api",
   "Mode": "Default",
@@ -120,6 +120,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\News\\Kits.webp"
+    },
+    {
+      "Identity": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\News\\PL2425-TALKING-TACTICS-SESKO-GYOKERES.webp",
+      "SourceId": "epl_api",
+      "SourceType": "Discovered",
+      "ContentRoot": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\",
+      "BasePath": "_content/epl_api",
+      "RelativePath": "News/PL2425-TALKING-TACTICS-SESKO-GYOKERES#[.{fingerprint}]?.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "iuhqdw89f5",
+      "Integrity": "2klgHDG+07htDJT1FUD1gRmt54ulx5yaaBXNYGr8yJk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\News\\PL2425-TALKING-TACTICS-SESKO-GYOKERES.webp"
     },
     {
       "Identity": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\News\\Placeholder-lead.webp",
@@ -1477,6 +1498,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-GHSSDlc4/ohj1leQJN0fU67t6AKlHshQ1mtXlAe4J00="
+        }
+      ]
+    },
+    {
+      "Route": "News/PL2425-TALKING-TACTICS-SESKO-GYOKERES.iuhqdw89f5.webp",
+      "AssetFile": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\News\\PL2425-TALKING-TACTICS-SESKO-GYOKERES.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "117998"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2klgHDG+07htDJT1FUD1gRmt54ulx5yaaBXNYGr8yJk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 17 Aug 2025 11:10:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "iuhqdw89f5"
+        },
+        {
+          "Name": "label",
+          "Value": "News/PL2425-TALKING-TACTICS-SESKO-GYOKERES.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-2klgHDG+07htDJT1FUD1gRmt54ulx5yaaBXNYGr8yJk="
+        }
+      ]
+    },
+    {
+      "Route": "News/PL2425-TALKING-TACTICS-SESKO-GYOKERES.webp",
+      "AssetFile": "d:\\Web Development\\Backend-ASP.NET\\ASP.NET Web\\epl_api\\wwwroot\\News\\PL2425-TALKING-TACTICS-SESKO-GYOKERES.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "117998"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2klgHDG+07htDJT1FUD1gRmt54ulx5yaaBXNYGr8yJk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 17 Aug 2025 11:10:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-2klgHDG+07htDJT1FUD1gRmt54ulx5yaaBXNYGr8yJk="
         }
       ]
     },

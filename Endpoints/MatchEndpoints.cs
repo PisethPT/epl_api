@@ -278,6 +278,85 @@ public static class MatchEndpoints
         }).DisableAntiforgery()
         .RequireAuthorization("OnlyAdmin");
 
+        // Match table
+        // About the short abbreviations in Premier League standings (table)
+        // Pos Team   Pl  W  D  L  GF  GA  GD  Pts  Next
+        app.MapGet("/matches/tables", async (EPLContext context) =>
+        {
+            foreach (var match in context.Matches.Where(match => match.KickoffStatus != 2))
+            {
+                var matchDateTime = match.MatchDate.ToDateTime(TimeOnly.FromTimeSpan(match.MatchTime));
+                if (matchDateTime.AddMinutes(90) < DateTime.Now && matchDateTime < DateTime.Now && match.KickoffStatus != 2)
+                {
+                    match.KickoffStatus = 2;
+                    match.IsGameFinish = true;
+                }
+                // If the match is ongoing, set status to 0 but alway status is 1 when create first match
+                else if (matchDateTime.AddMinutes(90) > DateTime.Now && matchDateTime < DateTime.Now && match.KickoffStatus != 0)
+                {
+                    match.KickoffStatus = 0;
+                    match.IsGameFinish = false;
+                }
+                context.Matches.Update(match);
+            }
+            var teams = await context.Teams.ToListAsync();
+            var matches = await context.Matches.ToListAsync();
+
+            var table = teams.Select(team =>
+            {
+                var played = matches.Count(m => m.HomeTeamId == team.Id || m.AwayTeamId == team.Id);
+                var won = matches.Count(m =>
+                    (m.HomeTeamId == team.Id && m.HomeTeamScore > m.AwayTeamScore) ||
+                    (m.AwayTeamId == team.Id && m.AwayTeamScore > m.HomeTeamScore));
+                var drawn = matches.Count(m => m.HomeTeamScore == m.AwayTeamScore &&
+                    (m.HomeTeamId == team.Id || m.AwayTeamId == team.Id));
+                var lost = played - won - drawn;
+                var goalsFor = matches.Where(m => m.HomeTeamId == team.Id).Sum(m => m.HomeTeamScore) +
+                           matches.Where(m => m.AwayTeamId == team.Id).Sum(m => m.AwayTeamScore);
+                var goalsAgainst = matches.Where(m => m.HomeTeamId == team.Id).Sum(m => m.AwayTeamScore) +
+                           matches.Where(m => m.AwayTeamId == team.Id).Sum(m => m.HomeTeamScore);
+                var goalDiff = goalsFor - goalsAgainst;
+                var points = won * 3 + drawn;
+
+                // Find next match
+                var nextMatch = matches
+                    .Where(m => (m.HomeTeamId == team.Id || m.AwayTeamId == team.Id) && m.KickoffStatus == 1 && m.IsGameFinish == false)
+                    .OrderBy(m => m.MatchDate)
+                    .ThenBy(m => m.MatchTime)
+                    .FirstOrDefault();
+
+                return new
+                {
+                    TeamName = team.Name,
+                    TeamImage = team.ClubCrest,
+                    Pl = played,
+                    W = won,
+                    D = drawn,
+                    L = lost,
+                    GF = goalsFor,
+                    GA = goalsAgainst,
+                    GD = goalDiff,
+                    Pts = points,
+                    NextMatch = nextMatch != null
+                    ? $"{nextMatch.MatchDate:dd-MM-yyyy} {nextMatch.MatchTime} vs {(nextMatch.HomeTeamId == team.Id ? context.Teams.Find(nextMatch.AwayTeamId)?.Name : context.Teams.Find(nextMatch.HomeTeamId)?.Name)}"
+                    : "-",
+                    NextTeam = nextMatch != null
+                    ? $"{(nextMatch.HomeTeamId == team.Id ? context.Teams.Find(nextMatch.AwayTeamId)?.ClubCrest : context.Teams.Find(nextMatch.HomeTeamId)?.ClubCrest)}"
+                    : "-"
+                };
+            }).OrderByDescending(t => t.Pts)
+              .ThenByDescending(t => t.GD)
+              .ThenByDescending(t => t.GF)
+              .ToList();
+
+            return Results.Ok(new
+            {
+                statusCode = 200,
+                message = "Success.",
+                content = table
+            });
+        });
+
         // Get ongoing, finished, and upcoming matches
         // Ongoing matches are those that are currently being played (status 0)
         // Finished matches are those that have been completed (status 2)
